@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>املاک هخامنش | مرجع املاک لوکس تهران</title>
+<meta name="description" content="املاک هخامنش — خرید، فروش، رهن و اجاره آپارتمان، ویلا، زمین و املاک تجاری لوکس در تهران">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        deep: '#07111F',
+        navy: '#0B1728',
+        surface: '#101D31',
+        surface2: '#162944',
+        card: '#0F1E34',
+        gold: '#C9A227',
+        champagne: '#E3C76F',
+        cream: '#F7F5EF',
+        muted: '#AAB2BF',
+        line: 'rgba(201,162,39,0.22)'
+      },
+      fontFamily: { vazir: ['Vazirmatn','Tahoma','sans-serif'] },
+      boxShadow: {
+        luxe: '0 20px 60px -15px rgba(201,162,39,0.28)',
+        card: '0 18px 50px -18px rgba(0,0,0,0.65)',
+        goldglow: '0 0 0 1px rgba(201,162,39,.35), 0 10px 40px -10px rgba(201,162,39,.45)'
+      }
+    }
+  }
+}
+</script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+*{font-family:'Vazirmatn',Tahoma,sans-serif}
+html{scroll-behavior:smooth}
+body{background:#07111F;color:#F7F5EF;overflow-x:hidden}
+::selection{background:#C9A227;color:#07111F}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:#07111F}
+::-webkit-scrollbar-thumb{background:linear-gradient(#C9A227,#8a6f16);border-radius:20px;border:2px solid #07111F}
+.gold-text{background:linear-gradient(135deg,#F6E6A8 0%,#E3C76F 25%,#C9A227 55%,#F2D87A 80%,#C9A227 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.gold-btn{background:linear-gradient(135deg,#E3C76F 0%,#C9A227 55%,#a8861d 100%);color:#07111F;font-weight:800;transition:.35s;position:relative;overflow:hidden}
+.gold-btn::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.45),transparent);transform:translateX(100%);transition:.6s}
+.gold-btn:hover::after{transform:translateX(-100%)}
+.gold-btn:hover{transform:translateY(-2px);box-shadow:0 18px 45px -10px rgba(201,162,39,.6)}
+.ghost-btn{border:1px solid rgba(201,162,39,.5);transition:.3s}
+.ghost-btn:hover{background:rgba(201,162,39,.12);border-color:#C9A227}
+.glass{background:rgba(16,29,49,.72);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.hero-kenburns{animation:ken 22s ease-in-out infinite alternate}
+@keyframes ken{0%{transform:scale(1) }100%{transform:scale(1.12)}}
+.reveal{opacity:0;transform:translateY(34px);transition:all .9s cubic-bezier(.16,1,.3,1)}
+.reveal.in{opacity:1;transform:none}
+.ornament{display:flex;align-items:center;gap:14px;justify-content:center}
+.ornament::before,.ornament::after{content:'';height:1px;width:90px;background:linear-gradient(90deg,transparent,#C9A227)}
+.ornament::after{background:linear-gradient(90deg,#C9A227,transparent)}
+.card-luxe{background:linear-gradient(180deg,#12233d 0%,#0d1a2e 100%);border:1px solid rgba(201,162,39,.16);transition:.45s cubic-bezier(.16,1,.3,1)}
+.card-luxe:hover{transform:translateY(-8px);border-color:rgba(201,162,39,.55);box-shadow:0 28px 70px -20px rgba(0,0,0,.7),0 0 0 1px rgba(201,162,39,.2)}
+.img-zoom{overflow:hidden}
+.img-zoom img{transition:transform 1.1s cubic-bezier(.16,1,.3,1)}
+.img-zoom:hover img{transform:scale(1.08)}
+.marquee-track{display:flex;gap:2.5rem;animation:marq 28s linear infinite;width:max-content}
+@keyframes marq{to{transform:translateX(50%)}}
+.inp{background:#0B1728;border:1px solid rgba(170,178,191,.22);border-radius:14px;padding:.85rem 1rem;color:#F7F5EF;width:100%;transition:.3s;outline:none}
+.inp:focus{border-color:#C9A227;box-shadow:0 0 0 3px rgba(201,162,39,.18);background:#101D31}
+.inp::placeholder{color:#6b7688}
+select.inp option{background:#0B1728}
+.badge-gold{background:linear-gradient(135deg,#E3C76F,#C9A227);color:#07111F}
+.chip{border:1px solid rgba(201,162,39,.35);border-radius:999px;padding:.35rem .9rem;font-size:.8rem;display:inline-flex;align-items:center;gap:.4rem;background:rgba(201,162,39,.08)}
+.tab-active{background:linear-gradient(135deg,#E3C76F,#C9A227)!important;color:#07111F!important;font-weight:800;border-color:transparent!important}
+.page{display:none}
+.page.active{display:block;animation:fadeUp .6s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+#preloader{position:fixed;inset:0;z-index:100;background:#07111F;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1.2rem;transition:opacity .7s,visibility .7s}
+#preloader.hide{opacity:0;visibility:hidden}
+.loader-ring{width:86px;height:86px;border-radius:50%;border:2px solid rgba(201,162,39,.2);border-top-color:#C9A227;animation:spin 1s linear infinite;display:flex;align-items:center;justify-content:center}
+@keyframes spin{to{transform:rotate(360deg)}}
+.grain::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.line-gold{height:1px;background:linear-gradient(90deg,transparent,rgba(201,162,39,.6),transparent)}
+.dot-pattern{background-image:radial-gradient(rgba(201,162,39,.14) 1px,transparent 1px);background-size:22px 22px}
+.fav-active{fill:#C9A227!important;color:#C9A227!important;border-color:#C9A227!important}
+.toast{animation:toastIn .45s cubic-bezier(.16,1,.3,1)}
+@keyframes toastIn{from{opacity:0;transform:translateY(16px) scale(.96)}to{opacity:1;transform:none}}
+.faq-body{max-height:0;overflow:hidden;transition:max-height .5s ease}
+.faq-item.open .faq-body{max-height:400px}
+.faq-item.open .faq-chevron{transform:rotate(180deg)}
+.faq-chevron{transition:.4s}
+input[type=range]{accent-color:#C9A227}
+.gallery-thumb{border:2px solid transparent;transition:.3s;cursor:pointer}
+.gallery-thumb.active{border-color:#C9A227}
+.timeline-line::before{content:'';position:absolute;right:19px;top:10px;bottom:10px;width:2px;background:linear-gradient(#C9A227,rgba(201,162,39,.1))}
+.skip{position:fixed;top:-60px;right:16px;z-index:200;transition:.3s}
+.skip:focus{top:12px}
+.nav-link{position:relative;padding:.4rem .1rem;color:#D6DCE6;transition:.3s;font-weight:500}
+.nav-link::after{content:'';position:absolute;bottom:0;right:0;width:0;height:2px;background:linear-gradient(90deg,#E3C76F,#C9A227);transition:.35s;border-radius:2px}
+.nav-link:hover,.nav-link.active{color:#fff}
+.nav-link:hover::after,.nav-link.active::after{width:100%}
+.lux-divider{width:64px;height:3px;background:linear-gradient(90deg,#E3C76F,#C9A227);border-radius:99px}
+@media(max-width:768px){.marquee-track{gap:1.2rem}}
+</style>
+</head>
+<body class="grain font-vazir">
+<a href="#main" class="skip gold-btn px-4 py-2 rounded-xl text-sm">پرش به محتوای اصلی</a>
+
+<!-- PRELOADER -->
+<div id="preloader" aria-hidden="true">
+  <div class="loader-ring"><span class="text-3xl font-black gold-text">هـ</span></div>
+  <div class="text-center">
+    <div class="text-2xl font-900 font-black tracking-tight">املاک <span class="gold-text">هخامنش</span></div>
+    <div class="text-xs text-muted mt-1 tracking-[.3em]">HAKHAMANESH ESTATE • SINCE 1387</div>
+  </div>
+  <div class="w-52 h-[3px] bg-white/10 rounded-full overflow-hidden"><div id="loadBar" class="h-full w-0 bg-gradient-to-l from-champagne to-gold transition-all"></div></div>
+</div>
+
+<!-- TOP PROGRESS -->
+<div class="fixed top-0 right-0 left-0 h-[3px] z-[90] bg-transparent"><div id="scrollProg" class="h-full w-0 bg-gradient-to-l from-champagne via-gold to-champagne"></div></div>
+
+<!-- TOPBAR -->
+<div class="hidden md:block bg-[#050c18] border-b border-white/5 text-[13px]">
+  <div class="max-w-7xl mx-auto px-6 py-2.5 flex items-center justify-between text-muted">
+    <div class="flex items-center gap-6">
+      <span class="flex items-center gap-2"><i data-lucide="shield-check" class="w-4 h-4 text-gold"></i> دارای مجوز رسمی اتحادیه مشاوران املاک تهران</span>
+      <span class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-gold"></i> شنبه تا پنجشنبه ۹ تا ۲۱ — جمعه ۱۰ تا ۱۸</span>
+    </div>
+    <div class="flex items-center gap-5">
+      <a href="tel:02122008888" dir="ltr" class="flex items-center gap-2 hover:text-champagne transition"><i data-lucide="phone" class="w-4 h-4 text-gold"></i> 021-2200 8888</a>
+      <span class="flex items-center gap-3">
+        <a href="#" aria-label="اینستاگرام" class="hover:text-gold transition"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+        <a href="#" aria-label="لینکدین" class="hover:text-gold transition"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+        <a href="#" aria-label="تلگرام" class="hover:text-gold transition"><i data-lucide="send" class="w-4 h-4"></i></a>
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header id="header" class="sticky top-0 z-[80] glass border-b border-white/5 transition-all">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 h-[76px] flex items-center justify-between gap-4">
+    <button data-nav="home" class="flex items-center gap-3 group" aria-label="املاک هخامنش - خانه">
+      <span class="w-12 h-12 rounded-2xl flex items-center justify-center font-black text-2xl text-deep shadow-luxe shrink-0" style="background:linear-gradient(135deg,#F6E6A8,#C9A227 60%,#8a6f16)">هـ</span>
+      <span class="text-right leading-tight">
+        <span class="block font-black text-lg">املاک <span class="gold-text">هخامنش</span></span>
+        <span class="block text-[11px] tracking-[.28em] text-muted">HAKHAMANESH • LUXURY ESTATE</span>
+      </span>
+    </button>
+    <nav class="hidden lg:flex items-center gap-7 text-[15px]" aria-label="منوی اصلی">
+      <a href="#" data-nav="home" class="nav-link active">خانه</a>
+      <a href="#" data-nav="listings" class="nav-link">املاک</a>
+      <a href="#" data-nav="about" class="nav-link">درباره ما</a>
+      <a href="#" data-nav="blog" class="nav-link">مجله ملکی</a>
+      <a href="#" data-nav="contact" class="nav-link">تماس با ما</a>
+      <a href="#" data-nav="terms" class="nav-link">قوانین</a>
+    </nav>
+    <div class="flex items-center gap-2.5">
+      <button data-nav="favorites" class="relative w-11 h-11 rounded-xl border border-white/10 flex items-center justify-center hover:border-gold transition" aria-label="علاقه‌مندی‌ها">
+        <i data-lucide="heart" class="w-5 h-5"></i>
+        <span id="favCount" class="absolute -top-1.5 -left-1.5 min-w-[20px] h-5 px-1 rounded-full badge-gold text-[11px] font-800 font-bold flex items-center justify-center">۰</span>
+      </button>
+      <button onclick="openConsult()" class="hidden sm:inline-flex gold-btn px-5 py-3 rounded-xl text-sm items-center gap-2"><i data-lucide="calendar-check" class="w-4 h-4"></i> مشاوره رایگان</button>
+      <button id="menuBtn" class="lg:hidden w-11 h-11 rounded-xl border border-white/10 flex items-center justify-center" aria-label="باز کردن منو"><i data-lucide="menu" class="w-5 h-5"></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE DRAWER -->
+<div id="mobileDrawer" class="fixed inset-0 z-[95] hidden">
+  <div class="absolute inset-0 bg-black/70 backdrop-blur-sm" onclick="toggleMobile(false)"></div>
+  <aside class="absolute top-0 bottom-0 right-0 w-[320px] bg-navy border-l border-line p-6 flex flex-col gap-2 overflow-y-auto">
+    <div class="flex items-center justify-between mb-4">
+      <div class="font-black text-lg">املاک <span class="gold-text">هخامنش</span></div>
+      <button onclick="toggleMobile(false)" class="w-10 h-10 rounded-xl border border-white/10 flex items-center justify-center" aria-label="بستن"><i data-lucide="x" class="w-5 h-5"></i></button>
+    </div>
+    <a href="#" data-nav="home" class="p-3.5 rounded-xl hover:bg-white/5 flex items-center gap-3"><i data-lucide="home" class="w-5 h-5 text-gold"></i> خانه</a>
+    <a href="#" data-nav="listings" class="p-3.5 rounded-xl hover:bg-white/5 flex items-center gap-3"><i data-lucide="building-2" class="w-5 h-5 text-gold"></i> املاک</a>
+    <a href="#" data-nav="favorites" class="p-3.5 rounded-xl hover:bg-white/5 flex items-center gap-3"><i data-lucide="heart" class="w-5 h-5 text-gold"></i> علاقه‌مندی‌ها</a>
+    <a href="#" data-nav="about" class="p-3.5 rounded-xl hover:bg-white/5 flex items-center gap-3"><i data-lucide="landmark" class="w-5 h-5 text-gold"></i> درباره ما</a>
+    <a href="#" data-nav="blog" class="p-3.5 rounded-xl hover:bg-white/5 flex items-center gap-3"><i data-lucide="newspaper" class="w-5 h-5 text-gold"></i> مجله ملکی</a>
+    <a href="#" data-nav="contact" class="p-3.5 rounded-xl hover:bg-white/5 flex items-center gap-3"><i data-lucide="phone-call" class="w-5 h-5 text-gold"></i> تماس با ما</a>
+    <a href="#" data-nav="terms" class="p-3.5 rounded-xl hover:bg-white/5 flex items-center gap-3"><i data-lucide="scale" class="w-5 h-5 text-gold"></i> قوانین و حریم خصوصی</a>
+    <div class="line-gold my-3"></div>
+    <button onclick="toggleMobile(false);openConsult()" class="gold-btn w-full py-3.5 rounded-xl flex items-center justify-center gap-2"><i data-lucide="sparkles" class="w-4 h-4"></i> رزرو مشاوره رایگان</button>
+    <a href="tel:02122008888" dir="ltr" class="ghost-btn w-full py-3.5 rounded-xl flex items-center justify-center gap-2 mt-2">021-2200 8888</a>
+    <p class="text-xs text-muted text-center mt-4 leading-6">فرشته، خیابان مریم شرقی، پلاک ۳۲<br>شنبه تا پنجشنبه ۹ الی ۲۱</p>
+  </aside>
+</div>
+
+<main id="main">
+<!-- ================= HOME ================= -->
+<section id="page-home" class="page active">
+
+  <!-- HERO -->
+  <div class="relative min-h-[96vh] flex items-center overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2000&auto=format&fit=crop" alt="ویلای لوکس مدرن در شب" class="w-full h-full object-cover hero-kenburns" fetchpriority="high">
+      <div class="absolute inset-0" style="background:linear-gradient(to left,rgba(7,17,31,.96) 20%,rgba(7,17,31,.72) 55%,rgba(7,17,31,.35) 100%)"></div>
+      <div class="absolute inset-0" style="background:linear-gradient(to top,#07111F 2%,transparent 45%)"></div>
+      <div class="absolute inset-0 dot-pattern opacity-40"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 pt-16 pb-12 w-full grid lg:grid-cols-[1.05fr_.95fr] gap-12 items-center">
+      <div class="reveal in">
+        <div class="inline-flex items-center gap-2 chip !py-2 !px-4 mb-6"><span class="w-2 h-2 rounded-full bg-gold animate-pulse"></span> از ۱۳۸۷ · مرجع املاک لوکس شمال تهران</div>
+        <h1 class="text-[2.4rem] sm:text-6xl lg:text-[4.2rem] font-black leading-[1.15]">سکونت در شأنِ<br><span class="gold-text">میراثِ هخامنش</span></h1>
+        <p class="text-muted text-base sm:text-lg leading-8 mt-5 max-w-xl">خرید، فروش، رهن و اجاره آپارتمان، ویلا، زمین و املاک تجاری با استاندارد جهانی؛ کارشناسی دقیق، امنیت حقوقی کامل و همراهی اختصاصی تا سند.</p>
+        <div class="flex flex-wrap items-center gap-4 mt-7">
+          <button data-nav="listings" class="gold-btn px-7 py-4 rounded-2xl flex items-center gap-2 text-[15px]"><i data-lucide="search" class="w-5 h-5"></i> جست‌وجوی املاک لوکس</button>
+          <button onclick="openConsult()" class="ghost-btn px-7 py-4 rounded-2xl flex items-center gap-2 text-[15px] bg-white/5 backdrop-blur"><i data-lucide="video" class="w-5 h-5 text-gold"></i> مشاوره تصویری رایگان</button>
+        </div>
+        <div class="flex items-center gap-4 mt-8">
+          <div class="flex -space-x-3 space-x-reverse">
+            <img class="w-11 h-11 rounded-full border-2 border-navy object-cover" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&auto=format&fit=crop" alt="مشتری">
+            <img class="w-11 h-11 rounded-full border-2 border-navy object-cover" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop" alt="مشتری">
+            <img class="w-11 h-11 rounded-full border-2 border-navy object-cover" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop" alt="مشتری">
+            <span class="w-11 h-11 rounded-full border-2 border-navy bg-gold text-deep text-xs font-black flex items-center justify-center">۴.۹</span>
+          </div>
+          <div class="text-sm leading-6"><div class="flex gap-1 text-gold">
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          </div><span class="text-white font-bold">+۴٬۸۰۰ معامله موفق</span> <span class="text-muted">· رضایت ۹۸٪ مشتریان</span></div>
+        </div>
+      </div>
+
+      <!-- SEARCH CARD -->
+      <div class="reveal in glass rounded-[26px] border border-line p-6 sm:p-7 shadow-card">
+        <div class="flex items-center justify-between mb-5">
+          <h2 class="font-800 font-bold text-lg flex items-center gap-2"><i data-lucide="sliders-horizontal" class="w-5 h-5 text-gold"></i> جست‌وجوی هوشمند ملک</h2>
+          <span class="text-xs text-muted flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> ۲۱۴ ملک فعال</span>
+        </div>
+        <div class="grid grid-cols-3 gap-2 p-1.5 rounded-2xl bg-deep/80 border border-white/5 mb-5" role="tablist">
+          <button class="hero-tab tab-active py-3 rounded-xl text-sm transition border border-transparent" data-htab="sale">خرید</button>
+          <button class="hero-tab py-3 rounded-xl text-sm transition border border-transparent text-muted" data-htab="rent">رهن و اجاره</button>
+          <button class="hero-tab py-3 rounded-xl text-sm transition border border-transparent text-muted" data-htab="all">همه</button>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-3">
+          <label class="block"><span class="text-xs text-muted mb-1.5 block">محله / شهر</span>
+            <select id="heroCity" class="inp"><option value="all">همه مناطق</option><option>الهیه</option><option>زعفرانیه</option><option>فرمانیه</option><option>نیاوران</option><option>سعادت‌آباد</option><option>شهرک غرب</option><option>جردن</option><option>ونک</option><option>لواسان</option><option>کردان</option></select></label>
+          <label class="block"><span class="text-xs text-muted mb-1.5 block">نوع ملک</span>
+            <select id="heroType" class="inp"><option value="all">همه انواع</option><option value="apartment">آپارتمان</option><option value="penthouse">پنت‌هاوس</option><option value="villa">ویلا</option><option value="house">خانه</option><option value="land">زمین</option><option value="commercial">تجاری / اداری</option></select></label>
+          <label class="block"><span class="text-xs text-muted mb-1.5 block">بودجه (فروش)</span>
+            <select id="heroPrice" class="inp"><option value="all">بدون محدودیت</option><option value="20">تا ۲۰ میلیارد</option><option value="35">تا ۳۵ میلیارد</option><option value="60">تا ۶۰ میلیارد</option><option value="61">بالای ۶۰ میلیارد</option></select></label>
+          <label class="block"><span class="text-xs text-muted mb-1.5 block">متراژ حداقل</span>
+            <select id="heroArea" class="inp"><option value="0">بدون محدودیت</option><option value="100">بالای ۱۰۰ متر</option><option value="150">بالای ۱۵۰ متر</option><option value="200">بالای ۲۰۰ متر</option><option value="300">بالای ۳۰۰ متر</option></select></label>
+        </div>
+        <button id="heroSearchBtn" class="gold-btn w-full mt-5 py-4 rounded-2xl flex items-center justify-center gap-2 text-[15px]"><i data-lucide="search-check" class="w-5 h-5"></i> نمایش ۱۴ ملک منتخب</button>
+        <div class="flex items-center justify-between mt-4 text-xs text-muted">
+          <span class="flex items-center gap-1.5"><i data-lucide="badge-check" class="w-4 h-4 text-gold"></i> کارشناسی رسمی قیمت</span>
+          <span class="flex items-center gap-1.5"><i data-lucide="file-check" class="w-4 h-4 text-gold"></i> استعلام سند و بدهی</span>
+          <span class="flex items-center gap-1.5"><i data-lucide="lock" class="w-4 h-4 text-gold"></i> محرمانگی کامل</span>
+        </div>
+      </div>
+    </div>
+    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2 text-muted text-xs"><span>اسکرول کنید</span><span class="w-[22px] h-9 rounded-full border border-white/20 flex justify-center pt-1.5"><span class="w-1 h-2 rounded-full bg-gold animate-bounce"></span></span></div>
+  </div>
+
+  <!-- MARQUEE -->
+  <div class="border-y border-line bg-[#050c18] py-4 overflow-hidden" dir="ltr">
+    <div class="marquee-track text-sm text-muted" id="marquee"></div>
+  </div>
+
+  <!-- STATS -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 -mt-0 py-14">
+    <div id="statsRow" class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="card-luxe rounded-3xl p-6 text-center reveal"><div class="w-12 h-12 mx-auto rounded-2xl bg-gold/10 border border-line flex items-center justify-center mb-3"><i data-lucide="award" class="w-6 h-6 text-gold"></i></div><div class="text-3xl font-black gold-text"><span data-count="17">۰</span>+</div><div class="text-sm text-muted mt-1">سال تجربه تخصصی</div></div>
+      <div class="card-luxe rounded-3xl p-6 text-center reveal"><div class="w-12 h-12 mx-auto rounded-2xl bg-gold/10 border border-line flex items-center justify-center mb-3"><i data-lucide="key-round" class="w-6 h-6 text-gold"></i></div><div class="text-3xl font-black gold-text"><span data-count="4800">۰</span>+</div><div class="text-sm text-muted mt-1">معامله موفق</div></div>
+      <div class="card-luxe rounded-3xl p-6 text-center reveal"><div class="w-12 h-12 mx-auto rounded-2xl bg-gold/10 border border-line flex items-center justify-center mb-3"><i data-lucide="wallet" class="w-6 h-6 text-gold"></i></div><div class="text-3xl font-black gold-text"><span data-count="9200">۰</span></div><div class="text-sm text-muted mt-1">میلیارد ارزش معاملات (تومان)</div></div>
+      <div class="card-luxe rounded-3xl p-6 text-center reveal"><div class="w-12 h-12 mx-auto rounded-2xl bg-gold/10 border border-line flex items-center justify-center mb-3"><i data-lucide="heart-handshake" class="w-6 h-6 text-gold"></i></div><div class="text-3xl font-black gold-text"><span data-count="98">۰</span>٪</div><div class="text-sm text-muted mt-1">رضایت مشتریان</div></div>
+    </div>
+  </div>
+
+  <!-- FEATURED -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 pb-16">
+    <div class="flex flex-wrap items-end justify-between gap-4 mb-8 reveal">
+      <div><div class="flex items-center gap-3 mb-2"><span class="lux-divider"></span><span class="text-gold text-sm font-bold tracking-wide">پیشنهاد سردبیر لوکس</span></div>
+        <h2 class="text-3xl sm:text-4xl font-black">املاک <span class="gold-text">منتخب</span> هخامنش</h2>
+        <p class="text-muted mt-2">گلچینی از ارزشمندترین فایل‌های فروش و اجاره این هفته</p></div>
+      <div class="flex items-center gap-2">
+        <div class="flex gap-2 p-1 rounded-2xl bg-surface border border-white/5">
+          <button class="feat-tab tab-active px-4 py-2.5 rounded-xl text-sm transition" data-ftab="all">همه</button>
+          <button class="feat-tab px-4 py-2.5 rounded-xl text-sm transition text-muted" data-ftab="sale">فروش</button>
+          <button class="feat-tab px-4 py-2.5 rounded-xl text-sm transition text-muted" data-ftab="rent">اجاره</button>
+        </div>
+        <button data-nav="listings" class="ghost-btn px-4 py-2.5 rounded-xl text-sm flex items-center gap-1.5">همه املاک <i data-lucide="arrow-left" class="w-4 h-4"></i></button>
+      </div>
+    </div>
+    <div id="featuredGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </div>
+
+  <!-- CATEGORIES -->
+  <div class="bg-[#050c18] border-y border-line py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-10 reveal"><div class="ornament mb-3"><i data-lucide="crown" class="w-5 h-5 text-gold"></i></div>
+        <h2 class="text-3xl sm:text-4xl font-black">دسته‌بندی <span class="gold-text">املاک</span></h2>
+        <p class="text-muted mt-2">هر سلیقه‌ای، یک عمارت در هخامنش دارد</p></div>
+      <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6" id="catGrid"></div>
+    </div>
+  </div>
+
+  <!-- TRANSACTION TYPES -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-16">
+    <div class="flex flex-wrap items-end justify-between gap-4 mb-8 reveal">
+      <div><div class="flex items-center gap-3 mb-2"><span class="lux-divider"></span><span class="text-gold text-sm font-bold">نوع معامله شما چیست؟</span></div>
+      <h2 class="text-3xl sm:text-4xl font-black">خدمات <span class="gold-text">خرید، فروش، رهن و اجاره</span></h2></div>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="card-luxe rounded-[26px] p-8 relative overflow-hidden reveal group">
+        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=800&auto=format&fit=crop" alt="خرید ملک" class="absolute inset-0 w-full h-full object-cover opacity-15 group-hover:opacity-25 group-hover:scale-105 transition duration-700" loading="lazy"><div class="absolute inset-0 bg-gradient-to-t from-[#0d1a2e] via-[#0d1a2e]/80 to-transparent"></div>
+        <div class="relative"><div class="w-14 h-14 rounded-2xl badge-gold flex items-center justify-center mb-5 shadow-luxe"><i data-lucide="key-round" class="w-7 h-7"></i></div>
+        <h3 class="text-xl font-black mb-2">خرید اختصاصی</h3><p class="text-muted text-sm leading-7 mb-5">جست‌وجوی آف‌مارکت، کارشناسی قیمت، مذاکره حرفه‌ای و همراهی حقوقی تا انتقال سند. میانگین ۱۲٪ زیر قیمت بازار می‌خریم.</p>
+        <ul class="text-sm space-y-2.5 mb-6"><li class="flex gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i> دسترسی به فایل‌های اختصاصی و پیش‌فروش</li><li class="flex gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i> گزارش کارشناسی ۴۰ آیتمی + استعلام ثبتی</li><li class="flex gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i> مشاور اختصاصی و بازدید VIP</li></ul>
+        <button onclick="goListings({deal:'sale'})" class="gold-btn w-full py-3.5 rounded-xl text-sm">مشاهده فایل‌های خرید</button></div>
+      </div>
+      <div class="card-luxe rounded-[26px] p-8 relative overflow-hidden reveal group !border-gold/40" style="box-shadow:0 0 0 1px rgba(201,162,39,.25),0 30px 80px -25px rgba(201,162,39,.35)">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop" alt="فروش ملک" class="absolute inset-0 w-full h-full object-cover opacity-15 group-hover:opacity-25 group-hover:scale-105 transition duration-700" loading="lazy"><div class="absolute inset-0 bg-gradient-to-t from-[#0d1a2e] via-[#0d1a2e]/80 to-transparent"></div>
+        <div class="relative"><div class="inline-flex chip mb-4 !text-[11px]">پرفروش‌ترین سرویس · فروش ۳ برابر سریع‌تر</div>
+        <div class="w-14 h-14 rounded-2xl badge-gold flex items-center justify-center mb-5 shadow-luxe"><i data-lucide="trending-up" class="w-7 h-7"></i></div>
+        <h3 class="text-xl font-black mb-2">فروش به بالاترین قیمت</h3><p class="text-muted text-sm leading-7 mb-5">عکاسی سینمایی، تیزر هوایی، هوم‌استیجینگ و بازاریابی در ۱۲ پلتفرم. رکورد فروش پنت‌هاوس الهیه در ۹ روز.</p>
+        <ul class="text-sm space-y-2.5 mb-6"><li class="flex gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i> قیمت‌گذاری علمی با هوش بازار شمال تهران</li><li class="flex gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i> عکاسی، فیلمبرداری و تور مجازی رایگان</li><li class="flex gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i> تسویه و انتقال سند در ۴۸ ساعت</li></ul>
+        <button onclick="openConsult('sell')" class="gold-btn w-full py-3.5 rounded-xl text-sm">ثبت درخواست فروش</button></div>
+      </div>
+      <div class="card-luxe rounded-[26px] p-8 relative overflow-hidden reveal group">
+        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=800&auto=format&fit=crop" alt="رهن و اجاره" class="absolute inset-0 w-full h-full object-cover opacity-15 group-hover:opacity-25 group-hover:scale-105 transition duration-700" loading="lazy"><div class="absolute inset-0 bg-gradient-to-t from-[#0d1a2e] via-[#0d1a2e]/80 to-transparent"></div>
+        <div class="relative"><div class="w-14 h-14 rounded-2xl badge-gold flex items-center justify-center mb-5 shadow-luxe"><i data-lucide="file-signature" class="w-7 h-7"></i></div>
+        <h3 class="text-xl font-black mb-2">رهن و اجاره مطمئن</h3><p class="text-muted text-sm leading-7 mb-5">اعتبارسنجی مستأجر و موجر، قرارداد رسمی با کد رهگیری، بیمه اجاره و مدیریت سالانه ملک شما.</p>
+        <ul class="text-sm space-y-2.5 mb-6"><li class="flex gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i> تبدیل رهن و اجاره با بهترین فرمول روز</li><li class="flex gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i> مدیریت کامل ملک اجاره‌ای (۰ تا ۱۰۰)</li><li class="flex gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i> پشتیبانی حقوقی یک‌ساله قرارداد</li></ul>
+        <button onclick="goListings({deal:'rent'})" class="gold-btn w-full py-3.5 rounded-xl text-sm">مشاهده فایل‌های اجاره</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SPOTLIGHT PROJECT -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 pb-16">
+    <div class="rounded-[30px] overflow-hidden border border-line grid lg:grid-cols-2 bg-surface reveal">
+      <div class="relative min-h-[340px]">
+        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200&auto=format&fit=crop" alt="برج هخامنش الهیه" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-l from-transparent to-[#101D31]/40"></div>
+        <span class="absolute top-5 right-5 chip !bg-deep/80 backdrop-blur"><i data-lucide="sparkles" class="w-4 h-4 text-gold"></i> پروژه انحصاری · پیش‌فروش فاز ۲</span>
+        <button onclick="openLightbox(this.previousElementSibling.previousElementSibling.src)" class="absolute bottom-5 right-5 glass border border-line px-4 py-2.5 rounded-xl text-sm flex items-center gap-2 hover:border-gold transition"><i data-lucide="play" class="w-4 h-4 text-gold"></i> تور ویدیویی برج</button>
+      </div>
+      <div class="p-8 sm:p-10">
+        <div class="text-gold text-sm font-bold mb-2">الهیه · خیابان فرشته</div>
+        <h3 class="text-2xl sm:text-3xl font-black leading-snug">برج مسکونی <span class="gold-text">هخامنش پالاس</span><br>۲۸ واحد · لابی ۹ متری · روف‌لژ</h3>
+        <p class="text-muted text-sm leading-7 mt-3">طراحی معماری مینیمال با سنگ تراورتن عباس‌آباد، سیستم هوشمند KNX، استخر无限، سالن اجتماعات و ۳ طبقه پارکینگ باکس‌دار. تحویل زمستان ۱۴۰۵.</p>
+        <div class="grid grid-cols-3 gap-3 mt-6 text-center">
+          <div class="bg-deep/70 border border-white/5 rounded-2xl p-3"><div class="font-black text-lg">۱۸۰ تا ۴۲۰</div><div class="text-[11px] text-muted">متراژ (متر)</div></div>
+          <div class="bg-deep/70 border border-white/5 rounded-2xl p-3"><div class="font-black text-lg gold-text">۸۷٪</div><div class="text-[11px] text-muted">پیشرفت فیزیکی</div></div>
+          <div class="bg-deep/70 border border-white/5 rounded-2xl p-3"><div class="font-black text-lg">از متری ۱۹۸م</div><div class="text-[11px] text-muted">قیمت پیش‌فروش</div></div>
+        </div>
+        <div class="mt-4"><div class="flex justify-between text-xs text-muted mb-1.5"><span>ظرفیت باقی‌مانده فاز ۲</span><span class="text-champagne font-bold">۶ واحد از ۱۴ واحد</span></div><div class="h-2.5 rounded-full bg-white/5 overflow-hidden"><div class="h-full w-[57%] rounded-full" style="background:linear-gradient(90deg,#E3C76F,#C9A227)"></div></div></div>
+        <div class="flex flex-wrap gap-3 mt-6"><button onclick="openConsult('project')" class="gold-btn px-6 py-3.5 rounded-xl text-sm flex items-center gap-2"><i data-lucide="calendar-days" class="w-4 h-4"></i> رزرو بازدید از شوروم</button><button data-nav="contact" class="ghost-btn px-6 py-3.5 rounded-xl text-sm">دریافت بروشور</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHY US + CALCULATOR -->
+  <div class="bg-[#050c18] border-y border-line py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-10 items-start">
+      <div class="reveal">
+        <div class="flex items-center gap-3 mb-2"><span class="lux-divider"></span><span class="text-gold text-sm font-bold">چرا هخامنش؟</span></div>
+        <h2 class="text-3xl sm:text-4xl font-black leading-snug">اعتماد، <span class="gold-text">امضای</span> ماست</h2>
+        <div class="grid sm:grid-cols-2 gap-4 mt-7">
+          <div class="bg-surface border border-white/5 rounded-2xl p-5 hover:border-gold/40 transition"><i data-lucide="shield-check" class="w-7 h-7 text-gold mb-3"></i><h4 class="font-bold mb-1">امنیت حقوقی ۱۰۰٪</h4><p class="text-xs text-muted leading-6">وکیل ملکی اختصاصی، استعلام ثبتی، شهرداری و بدهی بانکی پیش از هر قرارداد.</p></div>
+          <div class="bg-surface border border-white/5 rounded-2xl p-5 hover:border-gold/40 transition"><i data-lucide="gem" class="w-7 h-7 text-gold mb-3"></i><h4 class="font-bold mb-1">استاندارد لوکس</h4><p class="text-xs text-muted leading-6">فقط فایل‌های درجه A با سند تک‌برگ، پایان‌کار و متریال درجه یک.</p></div>
+          <div class="bg-surface border border-white/5 rounded-2xl p-5 hover:border-gold/40 transition"><i data-lucide="line-chart" class="w-7 h-7 text-gold mb-3"></i><h4 class="font-bold mb-1">تحلیل سرمایه‌گذاری</h4><p class="text-xs text-muted leading-6">گزارش رشد محله، پیش‌بینی ۵ ساله و مشاوره سبد ملکی اختصاصی.</p></div>
+          <div class="bg-surface border border-white/5 rounded-2xl p-5 hover:border-gold/40 transition"><i data-lucide="headset" class="w-7 h-7 text-gold mb-3"></i><h4 class="font-bold mb-1">پشتیبانی مادام‌العمر</h4><p class="text-xs text-muted leading-6">از بازدید تا دکوراسیون، اجاره‌داری و فروش مجدد در کنار شمائیم.</p></div>
+        </div>
+      </div>
+      <div class="reveal card-luxe rounded-[26px] p-7 sm:p-8">
+        <h3 class="font-black text-xl flex items-center gap-2"><i data-lucide="calculator" class="w-6 h-6 text-gold"></i> محاسبه‌گر اقساط خرید</h3>
+        <p class="text-xs text-muted mt-1 mb-6">مبلغ وام، سود و مدت را تنظیم کنید تا قسط ماهانه را ببینید</p>
+        <label class="block mb-4"><span class="flex justify-between text-sm mb-2"><span>مبلغ وام</span><span id="loanVal" class="text-champagne font-bold">۳ میلیارد تومان</span></span><input id="calcLoan" type="range" min="500" max="10000" step="100" value="3000" class="w-full"></label>
+        <label class="block mb-4"><span class="flex justify-between text-sm mb-2"><span>نرخ سود سالانه</span><span id="rateVal" class="text-champagne font-bold">۲۳٪</span></span><input id="calcRate" type="range" min="5" max="30" step="1" value="23" class="w-full"></label>
+        <label class="block mb-5"><span class="flex justify-between text-sm mb-2"><span>مدت بازپرداخت</span><span id="yearVal" class="text-champagne font-bold">۱۰ سال</span></span><input id="calcYears" type="range" min="1" max="20" step="1" value="10" class="w-full"></label>
+        <div class="rounded-2xl bg-deep border border-line p-5 flex items-center justify-between">
+          <div><div class="text-xs text-muted">قسط ماهانه شما</div><div id="calcResult" class="text-2xl font-black gold-text mt-1">۶۰٬۲۷۴٬۰۰۰ تومان</div></div>
+          <button onclick="openConsult('loan')" class="ghost-btn px-4 py-3 rounded-xl text-sm whitespace-nowrap">مشاوره وام</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROCESS -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-16">
+    <div class="text-center mb-10 reveal"><div class="ornament mb-3"><i data-lucide="route" class="w-5 h-5 text-gold"></i></div><h2 class="text-3xl sm:text-4xl font-black">مسیر شما تا <span class="gold-text">کلید طلایی</span></h2></div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="relative card-luxe rounded-3xl p-6 reveal"><span class="text-5xl font-black text-white/5 absolute top-4 left-5">۰۱</span><div class="w-12 h-12 rounded-2xl badge-gold flex items-center justify-center mb-4"><i data-lucide="messages-square" class="w-6 h-6"></i></div><h4 class="font-bold mb-1.5">مشاوره و نیازسنجی</h4><p class="text-xs text-muted leading-6">جلسه حضوری یا آنلاین، تعیین بودجه، محله و هدف سرمایه‌گذاری.</p></div>
+      <div class="relative card-luxe rounded-3xl p-6 reveal"><span class="text-5xl font-black text-white/5 absolute top-4 left-5">۰۲</span><div class="w-12 h-12 rounded-2xl badge-gold flex items-center justify-center mb-4"><i data-lucide="building" class="w-6 h-6"></i></div><h4 class="font-bold mb-1.5">بازدید VIP</h4><p class="text-xs text-muted leading-6">تور اختصاصی با خودروی مجموعه + گزارش کارشناسی هر ملک.</p></div>
+      <div class="relative card-luxe rounded-3xl p-6 reveal"><span class="text-5xl font-black text-white/5 absolute top-4 left-5">۰۳</span><div class="w-12 h-12 rounded-2xl badge-gold flex items-center justify-center mb-4"><i data-lucide="scale" class="w-6 h-6"></i></div><h4 class="font-bold mb-1.5">مذاکره و قرارداد</h4><p class="text-xs text-muted leading-6">چانه‌زنی حرفه‌ای، تنظیم مبایعه‌نامه رسمی با کد رهگیری.</p></div>
+      <div class="relative card-luxe rounded-3xl p-6 reveal"><span class="text-5xl font-black text-white/5 absolute top-4 left-5">۰۴</span><div class="w-12 h-12 rounded-2xl badge-gold flex items-center justify-center mb-4"><i data-lucide="key-round" class="w-6 h-6"></i></div><h4 class="font-bold mb-1.5">سند و تحویل</h4><p class="text-xs text-muted leading-6">همراهی در دفترخانه، تسویه، تحویل کلید و خدمات پس از فروش.</p></div>
+    </div>
+  </div>
+
+  <!-- TEAM -->
+  <div class="bg-[#050c18] border-y border-line py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-wrap items-end justify-between gap-4 mb-8 reveal"><div><div class="flex items-center gap-3 mb-2"><span class="lux-divider"></span><span class="text-gold text-sm font-bold">تیم مشاوران ارشد</span></div><h2 class="text-3xl sm:text-4xl font-black">خبره‌هایی که <span class="gold-text">اعتماد</span> می‌سازند</h2></div><button data-nav="about" class="ghost-btn px-5 py-3 rounded-xl text-sm">آشنایی با مجموعه</button></div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" id="teamGrid"></div>
+    </div>
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-16">
+    <div class="text-center mb-8 reveal"><div class="ornament mb-3"><i data-lucide="quote" class="w-5 h-5 text-gold"></i></div><h2 class="text-3xl sm:text-4xl font-black">صدای <span class="gold-text">مشتریان</span> ما</h2></div>
+    <div class="reveal card-luxe rounded-[28px] p-8 sm:p-10 relative overflow-hidden">
+      <i data-lucide="quote" class="w-16 h-16 text-gold/10 absolute top-6 left-6"></i>
+      <div id="testiBox" class="relative min-h-[190px]"></div>
+      <div class="flex items-center justify-between mt-6">
+        <div id="testiDots" class="flex gap-2"></div>
+        <div class="flex gap-2"><button onclick="stepTesti(-1)" class="w-11 h-11 rounded-xl border border-white/10 flex items-center justify-center hover:border-gold transition" aria-label="قبلی"><i data-lucide="chevron-right" class="w-5 h-5"></i></button><button onclick="stepTesti(1)" class="w-11 h-11 rounded-xl border border-white/10 flex items-center justify-center hover:border-gold transition" aria-label="بعدی"><i data-lucide="chevron-left" class="w-5 h-5"></i></button></div>
+      </div>
+    </div>
+    <div class="grid grid-cols-3 gap-4 mt-6 text-center">
+      <div class="rounded-2xl border border-white/5 bg-surface p-4"><img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=200&auto=format&fit=crop" class="h-8 mx-auto object-contain opacity-60 grayscale" alt="اتحادیه املاک"><div class="text-[11px] text-muted mt-1">عضو رسمی اتحادیه</div></div>
+      <div class="rounded-2xl border border-white/5 bg-surface p-4"><div class="font-black gold-text">ISO 9001</div><div class="text-[11px] text-muted mt-1">مدیریت کیفیت</div></div>
+      <div class="rounded-2xl border border-white/5 bg-surface p-4"><div class="font-black gold-text">نشان اعتماد</div><div class="text-[11px] text-muted mt-1">۵ سال متوالی برند برتر</div></div>
+    </div>
+  </div>
+
+  <!-- BLOG PREVIEW -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 pb-16">
+    <div class="flex flex-wrap items-end justify-between gap-4 mb-8 reveal"><div><div class="flex items-center gap-3 mb-2"><span class="lux-divider"></span><span class="text-gold text-sm font-bold">مجله ملکی هخامنش</span></div><h2 class="text-3xl sm:text-4xl font-black">تحلیل و <span class="gold-text">راهنمای</span> بازار</h2></div><button data-nav="blog" class="ghost-btn px-5 py-3 rounded-xl text-sm flex items-center gap-1.5">همه مقالات <i data-lucide="arrow-left" class="w-4 h-4"></i></button></div>
+    <div id="blogPreviewGrid" class="grid md:grid-cols-3 gap-6"></div>
+  </div>
+
+  <!-- CTA -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 pb-20">
+    <div class="reveal relative rounded-[30px] overflow-hidden border border-gold/30">
+      <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1600&auto=format&fit=crop" alt="دکوراسیون لوکس" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+      <div class="absolute inset-0" style="background:linear-gradient(to left,rgba(7,17,31,.95),rgba(7,17,31,.65))"></div>
+      <div class="relative p-8 sm:p-14 grid lg:grid-cols-[1.2fr_.8fr] gap-8 items-center">
+        <div><h2 class="text-2xl sm:text-4xl font-black leading-snug">ملک شما امروز چقدر <span class="gold-text">می‌ارزد؟</span><br>کارشناسی رایگان در ۲۴ ساعت</h2><p class="text-muted mt-3 text-sm sm:text-base">فرم را پر کنید؛ کارشناس ارشد منطقه شما تماس می‌گیرد و گزارش مکتوب قیمت + استراتژی فروش ارسال می‌شود.</p>
+        <div class="flex flex-wrap gap-3 mt-6"><button onclick="openConsult('sell')" class="gold-btn px-7 py-4 rounded-2xl text-sm flex items-center gap-2"><i data-lucide="badge-dollar-sign" class="w-5 h-5"></i> درخواست کارشناسی رایگان</button><a href="tel:02122008888" class="glass border border-line px-7 py-4 rounded-2xl text-sm flex items-center gap-2 hover:border-gold transition"><i data-lucide="phone" class="w-5 h-5 text-gold"></i> <span dir="ltr">021-2200 8888</span></a></div></div>
+        <form class="newsletter-form glass border border-line rounded-3xl p-6" data-title="خبرنامه">
+          <h4 class="font-bold mb-1">عضویت در باشگاه مشتریان طلایی</h4><p class="text-xs text-muted mb-4 leading-6">هر هفته ۵ فایل آف‌مارکت + تحلیل بازار شمال تهران در ایمیل شما.</p>
+          <div class="flex gap-2"><input type="email" required placeholder="ایمیل شما" class="inp !py-3 text-sm" aria-label="ایمیل"><button class="gold-btn px-5 rounded-xl shrink-0" aria-label="عضویت"><i data-lucide="send" class="w-5 h-5"></i></button></div>
+          <p class="text-[11px] text-muted mt-3 flex items-center gap-1.5"><i data-lucide="lock" class="w-3.5 h-3.5 text-gold"></i> بدون اسپم · لغو هر زمان</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LISTINGS ================= -->
+<section id="page-listings" class="page">
+  <div class="relative py-16 overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1800&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-20" alt="ساختمان" loading="lazy">
+    <div class="absolute inset-0 bg-gradient-to-b from-deep/60 to-deep"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 text-center">
+      <div class="ornament mb-3"><i data-lucide="building-2" class="w-5 h-5 text-gold"></i></div>
+      <h1 class="text-3xl sm:text-5xl font-black">بانک املاک <span class="gold-text">هخامنش</span></h1>
+      <p class="text-muted mt-3">جست‌وجوی پیشرفته میان فایل‌های تأییدشده فروش و اجاره</p>
+      <div class="max-w-2xl mx-auto mt-6 relative"><i data-lucide="search" class="w-5 h-5 text-gold absolute right-4 top-1/2 -translate-y-1/2"></i><input id="searchInput" class="inp !pr-12 !py-4 !rounded-2xl glass" placeholder="جست‌وجو: نام محله، کد ملک، عنوان... (مثلاً الهیه یا HX-1042)"></div>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 pb-20 grid lg:grid-cols-[300px_1fr] gap-7 items-start">
+    <!-- Filters -->
+    <aside class="card-luxe rounded-3xl p-6 lg:sticky lg:top-24">
+      <div class="flex items-center justify-between mb-5"><h3 class="font-black flex items-center gap-2"><i data-lucide="filter" class="w-5 h-5 text-gold"></i> فیلترها</h3><button id="resetFilters" class="text-xs text-gold hover:text-champagne flex items-center gap-1"><i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i> حذف همه</button></div>
+      <div class="space-y-5">
+        <div><label class="text-xs text-muted block mb-2">نوع معامله</label><div class="grid grid-cols-3 gap-2" id="dealSeg">
+          <button data-deal="all" class="seg tab-active py-2.5 rounded-xl text-xs border border-white/10 transition">همه</button>
+          <button data-deal="sale" class="seg py-2.5 rounded-xl text-xs border border-white/10 transition text-muted">فروش</button>
+          <button data-deal="rent" class="seg py-2.5 rounded-xl text-xs border border-white/10 transition text-muted">اجاره</button></div></div>
+        <div><label class="text-xs text-muted block mb-2">نوع ملک</label><select id="filterType" class="inp text-sm"><option value="all">همه انواع</option><option value="apartment">آپارتمان</option><option value="penthouse">پنت‌هاوس</option><option value="villa">ویلا</option><option value="house">خانه</option><option value="land">زمین</option><option value="commercial">تجاری / اداری</option></select></div>
+        <div><label class="text-xs text-muted block mb-2">منطقه</label><select id="filterCity" class="inp text-sm"><option value="all">همه مناطق</option><option>الهیه</option><option>زعفرانیه</option><option>فرمانیه</option><option>نیاوران</option><option>سعادت‌آباد</option><option>شهرک غرب</option><option>جردن</option><option>ونک</option><option>لواسان</option><option>کردان</option><option>قلهک</option></select></div>
+        <div><label class="text-xs text-muted block mb-2">خواب</label><div class="grid grid-cols-4 gap-2" id="roomSeg">
+          <button data-room="all" class="rseg tab-active py-2 rounded-xl text-xs border border-white/10">همه</button>
+          <button data-room="2" class="rseg py-2 rounded-xl text-xs border border-white/10 text-muted">۲</button>
+          <button data-room="3" class="rseg py-2 rounded-xl text-xs border border-white/10 text-muted">۳</button>
+          <button data-room="4" class="rseg py-2 rounded-xl text-xs border border-white/10 text-muted">۴+</button></div></div>
+        <div><label class="text-xs text-muted block mb-2">حداقل متراژ: <span id="areaVal" class="text-champagne font-bold">۰ متر</span></label><input id="filterArea" type="range" min="0" max="400" step="10" value="0" class="w-full"></div>
+        <div><label class="text-xs text-muted block mb-2">امکانات</label><div id="amenWrap" class="flex flex-wrap gap-2"></div></div>
+        <label class="flex items-center justify-between bg-deep/60 border border-white/5 rounded-2xl p-3.5 cursor-pointer"><span class="text-sm flex items-center gap-2"><i data-lucide="crown" class="w-4 h-4 text-gold"></i> فقط فایل‌های ویژه</span><input id="onlyFeatured" type="checkbox" class="w-5 h-5 accent-[#C9A227]"></label>
+      </div>
+    </aside>
+    <div>
+      <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+        <div id="resultCount" class="text-sm text-muted"></div>
+        <label class="flex items-center gap-2 text-sm">مرتب‌سازی:
+          <select id="sortSelect" class="inp !w-auto !py-2.5 text-sm"><option value="newest">جدیدترین</option><option value="expensive">گران‌ترین</option><option value="cheap">ارزان‌ترین</option><option value="big">بزرگ‌ترین متراژ</option><option value="rooms">بیشترین خواب</option></select></label>
+      </div>
+      <div id="activeChips" class="flex flex-wrap gap-2 mb-4"></div>
+      <div id="listGrid" class="grid sm:grid-cols-2 xl:grid-cols-3 gap-6"></div>
+      <div id="emptyState" class="hidden text-center py-20 card-luxe rounded-3xl"><i data-lucide="search-x" class="w-14 h-14 text-gold mx-auto mb-4"></i><h3 class="font-black text-xl">ملکی با این مشخصات یافت نشد</h3><p class="text-muted text-sm mt-2">فیلترها را تغییر دهید یا درخواست ملک اختصاصی ثبت کنید.</p><div class="flex justify-center gap-3 mt-5"><button onclick="resetAllFilters()" class="ghost-btn px-5 py-3 rounded-xl text-sm">حذف فیلترها</button><button onclick="openConsult()" class="gold-btn px-5 py-3 rounded-xl text-sm">درخواست ملک اختصاصی</button></div></div>
+      <div class="text-center mt-8"><button id="loadMoreBtn" class="ghost-btn px-8 py-3.5 rounded-2xl text-sm hidden">نمایش موارد بیشتر</button></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROPERTY DETAIL ================= -->
+<section id="page-property" class="page">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
+    <button data-nav="listings" class="ghost-btn px-4 py-2.5 rounded-xl text-sm flex items-center gap-2 mb-5"><i data-lucide="arrow-right" class="w-4 h-4"></i> بازگشت به املاک</button>
+    <div class="grid lg:grid-cols-[1.5fr_1fr] gap-7 items-start">
+      <div>
+        <div class="relative rounded-[26px] overflow-hidden border border-line img-zoom bg-surface">
+          <img id="propGalleryMain" src="" alt="تصویر ملک" class="w-full h-[320px] sm:h-[480px] object-cover cursor-zoom-in">
+          <div class="absolute top-4 right-4 flex gap-2"><span id="propDealBadge" class="chip !bg-deep/80 backdrop-blur"></span><span id="propFeatBadge" class="chip badge-gold !border-0 hidden">ویژه</span></div>
+          <div class="absolute top-4 left-4 flex gap-2">
+            <button id="favBtnDetail" class="w-11 h-11 rounded-xl glass border border-line flex items-center justify-center hover:border-gold transition" aria-label="علاقه‌مندی"><i data-lucide="heart" class="w-5 h-5"></i></button>
+            <button id="shareBtn" class="w-11 h-11 rounded-xl glass border border-line flex items-center justify-center hover:border-gold transition" aria-label="اشتراک"><i data-lucide="share-2" class="w-5 h-5"></i></button>
+          </div>
+          <span class="absolute bottom-4 left-4 chip !bg-deep/85 backdrop-blur text-[11px]" id="propViews"></span>
+        </div>
+        <div id="propThumbs" class="grid grid-cols-3 gap-3 mt-3"></div>
+        <div class="card-luxe rounded-3xl p-6 sm:p-8 mt-6">
+          <div class="flex flex-wrap items-start justify-between gap-3">
+            <div><div class="text-xs text-muted flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-gold"></i> <span id="propLoc"></span> · کد <span id="propCode"></span></div>
+            <h1 id="propTitle" class="text-xl sm:text-2xl font-black mt-2 leading-snug"></h1></div>
+            <div class="text-left"><div id="propPrice" class="text-xl sm:text-2xl font-black gold-text"></div><div id="propPriceSub" class="text-xs text-muted mt-1"></div></div>
+          </div>
+          <div id="propMeta" class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-6"></div>
+          <div class="line-gold my-6"></div>
+          <h3 class="font-black mb-3 flex items-center gap-2"><i data-lucide="align-right" class="w-5 h-5 text-gold"></i> توضیحات ملک</h3>
+          <p id="propDesc" class="text-sm text-[#D6DCE6] leading-8"></p>
+          <h3 class="font-black mt-7 mb-3 flex items-center gap-2"><i data-lucide="sparkles" class="w-5 h-5 text-gold"></i> امکانات</h3>
+          <div id="propAmen" class="flex flex-wrap gap-2"></div>
+          <h3 class="font-black mt-7 mb-3 flex items-center gap-2"><i data-lucide="clipboard-list" class="w-5 h-5 text-gold"></i> مشخصات فنی</h3>
+          <div id="propSpecs" class="grid sm:grid-cols-2 gap-2.5 text-sm"></div>
+        </div>
+      </div>
+      <div class="space-y-5 lg:sticky lg:top-24">
+        <div class="card-luxe rounded-3xl p-6">
+          <h3 class="font-black flex items-center gap-2 mb-4"><i data-lucide="user-check" class="w-5 h-5 text-gold"></i> مشاور اختصاصی این ملک</h3>
+          <div id="propAgent"></div>
+          <div class="grid grid-cols-2 gap-2 mt-4"><a href="tel:02122008888" class="gold-btn py-3 rounded-xl text-sm flex items-center justify-center gap-1.5"><i data-lucide="phone" class="w-4 h-4"></i> تماس</a><button onclick="openConsult('visit')" class="ghost-btn py-3 rounded-xl text-sm">بازدید VIP</button></div>
+        </div>
+        <form id="visitForm" class="card-luxe rounded-3xl p-6">
+          <h3 class="font-black flex items-center gap-2 mb-1"><i data-lucide="calendar-check" class="w-5 h-5 text-gold"></i> رزرو بازدید حضوری</h3>
+          <p class="text-xs text-muted mb-4">بازدید با خودروی مجموعه + پذیرایی · بدون هزینه</p>
+          <div class="space-y-3"><input required id="visitName" class="inp text-sm" placeholder="نام و نام خانوادگی"><input required id="visitPhone" class="inp text-sm" inputmode="tel" placeholder="شماره موبایل (09...)"><div class="grid grid-cols-2 gap-3"><input id="visitDate" type="date" class="inp text-sm"><select id="visitTime" class="inp text-sm"><option>۱۰ تا ۱۳</option><option>۱۳ تا ۱۶</option><option>۱۶ تا ۱۹</option><option>۱۹ تا ۲۱</option></select></div>
+          <button class="gold-btn w-full py-3.5 rounded-xl text-sm">تأیید رزرو بازدید</button></div>
+        </form>
+        <div class="rounded-3xl overflow-hidden border border-line">
+          <div class="bg-surface p-4 text-sm font-bold flex items-center gap-2"><i data-lucide="map" class="w-4 h-4 text-gold"></i> موقعیت روی نقشه</div>
+          <iframe title="نقشه" src="https://www.google.com/maps?q=Elahiyeh,Tehran&output=embed" class="w-full h-56 grayscale invert-[.92] contrast-[.9]" loading="lazy"></iframe>
+        </div>
+        <div class="rounded-3xl border border-gold/30 bg-gradient-to-bl from-gold/15 to-transparent p-5 text-sm leading-7"><div class="flex items-center gap-2 font-bold mb-1"><i data-lucide="shield-check" class="w-5 h-5 text-gold"></i> تضمین هخامنش</div><span class="text-muted text-xs">سند، پایان‌کار و بدهی این ملک توسط وکیل مجموعه استعلام و تأیید شده است. گزارش مکتوب پیش از بازدید ارسال می‌شود.</span></div>
+      </div>
+    </div>
+    <div class="mt-12"><h2 class="text-2xl font-black mb-5">املاک <span class="gold-text">مشابه</span></h2><div id="propSimilar" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div></div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="page-about" class="page">
+  <div class="relative py-20 overflow-hidden text-center">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1800&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-20" alt="معماری" loading="lazy"><div class="absolute inset-0 bg-gradient-to-b from-deep/70 to-deep"></div>
+    <div class="relative max-w-3xl mx-auto px-6"><div class="ornament mb-3"><i data-lucide="landmark" class="w-5 h-5 text-gold"></i></div><h1 class="text-3xl sm:text-5xl font-black">داستان <span class="gold-text">هخامنش</span></h1><p class="text-muted mt-4 leading-8">از یک دفتر ۴۰ متری در فرشته تا مرجع املاک لوکس شمال تهران؛ ۱۷ سال اعتماد، دقت و معماریِ معامله.</p></div>
+  </div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 pb-20 grid lg:grid-cols-2 gap-10 items-center">
+    <div class="rounded-[28px] overflow-hidden border border-line img-zoom"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop" class="w-full h-[420px] object-cover" alt="دفتر هخامنش" loading="lazy"></div>
+    <div><div class="flex items-center gap-3 mb-2"><span class="lux-divider"></span><span class="text-gold text-sm font-bold">منشور ما</span></div>
+      <h2 class="text-3xl font-black leading-snug">معماریِ اعتماد،<br>مهندسیِ <span class="gold-text">سرمایه</span></h2>
+      <p class="text-muted text-sm leading-8 mt-4">هخامنش با الهام از شکوه معماری ایران باستان و استانداردهای روز مشاوره املاک جهان تأسیس شد. ما ملک نمی‌فروشیم؛ سبک زندگی، امنیت دارایی و آینده مالی می‌سازیم. هر فایل پیش از انتشار از ۴۰ فیلتر کیفی، حقوقی و قیمتی عبور می‌کند.</p>
+      <div class="grid grid-cols-2 gap-3 mt-6">
+        <div class="bg-surface border border-white/5 rounded-2xl p-4 flex gap-3"><i data-lucide="eye" class="w-6 h-6 text-gold shrink-0"></i><div><div class="font-bold text-sm">شفافیت</div><div class="text-xs text-muted">قیمت واقعی، سند شفاف</div></div></div>
+        <div class="bg-surface border border-white/5 rounded-2xl p-4 flex gap-3"><i data-lucide="gem" class="w-6 h-6 text-gold shrink-0"></i><div><div class="font-bold text-sm">پرستیژ</div><div class="text-xs text-muted">تجربه‌ای در شأن شما</div></div></div>
+        <div class="bg-surface border border-white/5 rounded-2xl p-4 flex gap-3"><i data-lucide="brain" class="w-6 h-6 text-gold shrink-0"></i><div><div class="font-bold text-sm">تخصص</div><div class="text-xs text-muted">تحلیل‌گر بازار، نه واسطه</div></div></div>
+        <div class="bg-surface border border-white/5 rounded-2xl p-4 flex gap-3"><i data-lucide="lock" class="w-6 h-6 text-gold shrink-0"></i><div><div class="font-bold text-sm">امنیت</div><div class="text-xs text-muted">وکیل و بیمه قرارداد</div></div></div>
+      </div></div>
+  </div>
+  <div class="bg-[#050c18] border-y border-line py-16"><div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl font-black text-center mb-10">مسیر <span class="gold-text">افتخار</span></h2>
+    <div class="relative timeline-line space-y-7 pr-12">
+      <div class="relative"><span class="absolute -right-12 top-0 w-10 h-10 rounded-full badge-gold font-black text-sm flex items-center justify-center">۸۷</span><div class="card-luxe rounded-2xl p-5"><div class="font-bold">۱۳۸۷ · تأسیس در فرشته</div><p class="text-xs text-muted mt-1 leading-6">شروع با ۳ مشاور و تمرکز بر آپارتمان‌های نوساز الهیه و فرشته.</p></div></div>
+      <div class="relative"><span class="absolute -right-12 top-0 w-10 h-10 rounded-full bg-surface border border-gold/40 text-gold font-black text-sm flex items-center justify-center">۹۴</span><div class="card-luxe rounded-2xl p-5"><div class="font-bold">۱۳۹۴ · دپارتمان ویلا و زمین</div><p class="text-xs text-muted mt-1 leading-6">ورود به لواسان، کردان و فشم با تیم کارشناسی رسمی دادگستری.</p></div></div>
+      <div class="relative"><span class="absolute -right-12 top-0 w-10 h-10 rounded-full bg-surface border border-gold/40 text-gold font-black text-sm flex items-center justify-center">۹۹</span><div class="card-luxe rounded-2xl p-5"><div class="font-bold">۱۳۹۹ · پلتفرم دیجیتال و تور مجازی</div><p class="text-xs text-muted mt-1 leading-6">اولین مجموعه تهران با تور سه‌بعدی، قرارداد آنلاین و باشگاه مشتریان.</p></div></div>
+      <div class="relative"><span class="absolute -right-12 top-0 w-10 h-10 rounded-full badge-gold font-black text-sm flex items-center justify-center">۰۵</span><div class="card-luxe rounded-2xl p-5"><div class="font-bold">۱۴۰۵ · برج هخامنش پالاس</div><p class="text-xs text-muted mt-1 leading-6">ورود به توسعه‌گری انحصاری؛ ۲۸ واحد لوکس در الهیه با فروش ۸۷٪ در پیش‌فروش.</p></div></div>
+    </div></div></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-16"><h2 class="text-3xl font-black text-center mb-8">تیم <span class="gold-text">رهبری</span></h2><div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" id="teamGridAbout"></div></div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="page-contact" class="page">
+  <div class="relative py-16 overflow-hidden text-center"><img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1800&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-20" alt="تماس" loading="lazy"><div class="absolute inset-0 bg-gradient-to-b from-deep/60 to-deep"></div>
+    <div class="relative"><div class="ornament mb-3"><i data-lucide="phone-call" class="w-5 h-5 text-gold"></i></div><h1 class="text-3xl sm:text-5xl font-black">در کنار <span class="gold-text">شما</span> هستیم</h1><p class="text-muted mt-3">پاسخ‌گویی در کمتر از ۱۵ دقیقه در ساعات کاری</p></div></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 pb-20 grid lg:grid-cols-[1fr_1.1fr] gap-7 items-start">
+    <div class="space-y-4">
+      <div class="grid sm:grid-cols-2 gap-4">
+        <a href="tel:02122008888" class="card-luxe rounded-3xl p-5 block"><i data-lucide="phone" class="w-6 h-6 text-gold mb-2"></i><div class="font-bold text-sm">تلفن دفتر مرکزی</div><div dir="ltr" class="text-champagne font-black mt-1 text-right">021-2200 8888</div></a>
+        <a href="tel:09121234567" class="card-luxe rounded-3xl p-5 block"><i data-lucide="smartphone" class="w-6 h-6 text-gold mb-2"></i><div class="font-bold text-sm">خط ویژه VIP</div><div dir="ltr" class="text-champagne font-black mt-1 text-right">0912-123 4567</div></a>
+        <div class="card-luxe rounded-3xl p-5"><i data-lucide="map-pin" class="w-6 h-6 text-gold mb-2"></i><div class="font-bold text-sm">نشانی</div><div class="text-xs text-muted mt-1 leading-6">تهران، فرشته، مریم شرقی، پلاک ۳۲، ساختمان هخامنش</div></div>
+        <div class="card-luxe rounded-3xl p-5"><i data-lucide="clock" class="w-6 h-6 text-gold mb-2"></i><div class="font-bold text-sm">ساعات کاری</div><div class="text-xs text-muted mt-1 leading-6">شنبه تا پنجشنبه ۹ تا ۲۱<br>جمعه ۱۰ تا ۱۸</div></div>
+      </div>
+      <div class="rounded-3xl overflow-hidden border border-line"><iframe title="نقشه دفتر" src="https://www.google.com/maps?q=Fereshteh,Tehran&output=embed" class="w-full h-64 grayscale invert-[.92]" loading="lazy"></iframe></div>
+      <div class="card-luxe rounded-3xl p-6"><h3 class="font-black mb-4">سوالات پرتکرار</h3><div id="faqWrap" class="space-y-3"></div></div>
+    </div>
+    <form id="contactForm" class="card-luxe rounded-[28px] p-7 sm:p-9 lg:sticky lg:top-24">
+      <h2 class="text-xl font-black flex items-center gap-2"><i data-lucide="send" class="w-5 h-5 text-gold"></i> ارسال پیام / درخواست مشاوره</h2>
+      <p class="text-xs text-muted mt-1 mb-6">فرم را تکمیل کنید؛ کارشناس شما در کمتر از ۲ ساعت کاری تماس می‌گیرد.</p>
+      <div id="contactFields" class="grid sm:grid-cols-2 gap-3">
+        <input id="cName" class="inp text-sm" placeholder="نام و نام خانوادگی *">
+        <input id="cPhone" class="inp text-sm" inputmode="tel" placeholder="موبایل (09...) *">
+        <select id="cSubject" class="inp text-sm"><option>موضوع: خرید ملک</option><option>موضوع: فروش ملک</option><option>موضوع: رهن و اجاره</option><option>موضوع: سرمایه‌گذاری</option><option>موضوع: سایر</option></select>
+        <select id="cBudget" class="inp text-sm"><option>بودجه: تا ۲۰ میلیارد</option><option>بودجه: ۲۰ تا ۴۰ میلیارد</option><option>بودجه: ۴۰ تا ۷۰ میلیارد</option><option>بودجه: بالای ۷۰ میلیارد</option><option>بودجه: اجاره</option></select>
+        <textarea id="cMsg" rows="5" class="inp text-sm sm:col-span-2" placeholder="توضیحات شما... (محله مدنظر، متراژ، شرایط خاص)"></textarea>
+      </div>
+      <label class="flex items-start gap-2 text-xs text-muted mt-4"><input id="cAgree" type="checkbox" checked class="mt-0.5 w-4 h-4 accent-[#C9A227]"> با <button type="button" data-nav="terms" class="text-gold underline">قوانین و حریم خصوصی</button> موافقم.</label>
+      <button class="gold-btn w-full mt-5 py-4 rounded-2xl text-sm flex items-center justify-center gap-2"><i data-lucide="check-circle-2" class="w-5 h-5"></i> ثبت و ارسال درخواست</button>
+      <div id="contactSuccess" class="hidden text-center py-10"><span class="w-20 h-20 rounded-full bg-emerald-500/15 border border-emerald-400/40 flex items-center justify-center mx-auto mb-4"><i data-lucide="check" class="w-10 h-10 text-emerald-400"></i></span><h3 class="font-black text-xl">پیام شما با موفقیت ثبت شد</h3><p class="text-sm text-muted mt-2">کد پیگیری: <span id="trackCode" class="text-champagne font-bold"></span><br>کارشناس ما به‌زودی با شما تماس می‌گیرد.</p><button type="button" onclick="resetContact()" class="ghost-btn px-6 py-3 rounded-xl text-sm mt-5">ثبت پیام جدید</button></div>
+    </form>
+  </div>
+</section>
+
+<!-- ================= BLOG ================= -->
+<section id="page-blog" class="page">
+  <div class="relative py-16 text-center overflow-hidden"><div class="absolute inset-0 dot-pattern opacity-30"></div><div class="relative"><div class="ornament mb-3"><i data-lucide="newspaper" class="w-5 h-5 text-gold"></i></div><h1 class="text-3xl sm:text-5xl font-black">مجله ملکی <span class="gold-text">هخامنش</span></h1><p class="text-muted mt-3">تحلیل بازار، راهنمای خرید و حقوق ملکی به زبان ساده</p>
+    <div class="max-w-xl mx-auto mt-6 relative"><i data-lucide="search" class="w-5 h-5 text-gold absolute right-4 top-1/2 -translate-y-1/2"></i><input id="blogSearch" class="inp !pr-12 !py-4 !rounded-2xl" placeholder="جست‌وجو در مقالات..."></div>
+    <div id="blogCats" class="flex flex-wrap justify-center gap-2 mt-5"></div></div></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 pb-20"><div id="blogGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"></div></div>
+</section>
+
+<!-- ================= BLOG DETAIL ================= -->
+<section id="page-blogdetail" class="page">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 py-10">
+    <button data-nav="blog" class="ghost-btn px-4 py-2.5 rounded-xl text-sm flex items-center gap-2 mb-6"><i data-lucide="arrow-right" class="w-4 h-4"></i> بازگشت به مجله</button>
+    <div id="blogDetailContent"></div>
+    <div class="mt-10"><h3 class="font-black text-xl mb-5">مطالب مرتبط</h3><div id="blogRelated" class="grid sm:grid-cols-2 gap-5"></div></div>
+  </div>
+</section>
+
+<!-- ================= FAVORITES ================= -->
+<section id="page-favorites" class="page">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-14">
+    <div class="text-center mb-8"><div class="ornament mb-3"><i data-lucide="heart" class="w-5 h-5 text-gold"></i></div><h1 class="text-3xl sm:text-4xl font-black">علاقه‌مندی‌های <span class="gold-text">شما</span></h1><p class="text-muted mt-2 text-sm">فایل‌های ذخیره‌شده در همین دستگاه نگهداری می‌شوند</p></div>
+    <div id="favGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    <div id="favEmpty" class="hidden text-center py-16 card-luxe rounded-3xl"><i data-lucide="heart-off" class="w-14 h-14 text-gold mx-auto mb-4"></i><h3 class="font-black text-xl">هنوز ملکی ذخیره نکرده‌اید</h3><p class="text-muted text-sm mt-2">روی قلب هر ملک بزنید تا اینجا ذخیره شود و بعداً مقایسه کنید.</p><button data-nav="listings" class="gold-btn px-6 py-3.5 rounded-xl text-sm mt-5">مشاهده املاک</button></div>
+  </div>
+</section>
+
+<!-- ================= TERMS ================= -->
+<section id="page-terms" class="page">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 py-14">
+    <div class="text-center mb-8"><div class="ornament mb-3"><i data-lucide="scale" class="w-5 h-5 text-gold"></i></div><h1 class="text-3xl sm:text-4xl font-black">قوانین، کمیسیون و <span class="gold-text">حریم خصوصی</span></h1><p class="text-muted text-sm mt-2">آخرین به‌روزرسانی: مهر ۱۴۰۵ · شفاف، بدون بند پنهان</p></div>
+    <div class="card-luxe rounded-3xl p-7 sm:p-9 space-y-7 text-sm leading-8 text-[#D6DCE6]">
+      <div><h3 class="font-black text-lg mb-2 flex items-center gap-2"><span class="w-8 h-8 rounded-xl badge-gold text-deep font-black flex items-center justify-center text-sm">۱</span> تعاریف و scope خدمات</h3><p class="text-muted">املاک هخامنش (دارای مجوز رسمی اتحادیه مشاوران املاک تهران) ارائه‌دهنده خدمات خرید، فروش، رهن و اجاره، کارشناسی قیمت، مدیریت پیمان و مشاوره سرمایه‌گذاری ملکی است. کلیه فایل‌ها با کد اختصاصی (HX) و استعلام ثبتی منتشر می‌شوند.</p></div>
+      <div><h3 class="font-black text-lg mb-2 flex items-center gap-2"><span class="w-8 h-8 rounded-xl badge-gold text-deep font-black flex items-center justify-center text-sm">۲</span> کمیسیون قانونی</h3><p class="text-muted">کمیسیون طبق تعرفه مصوب اتحادیه: برای معاملات فروش ۰/۵٪ از هر طرف + ۱۰٪ مالیات بر ارزش افزوده؛ برای رهن و اجاره معادل یک‌چهارم اجاره ماهانه از هر طرف (حداقل‌ها طبق مصوبه سال). فاکتور رسمی و کد رهگیری برای هر قرارداد صادر می‌شود.</p></div>
+      <div><h3 class="font-black text-lg mb-2 flex items-center gap-2"><span class="w-8 h-8 rounded-xl badge-gold text-deep font-black flex items-center justify-center text-sm">۳</span> حریم خصوصی و محرمانگی</h3><p class="text-muted">اطلاعات تماس، بودجه و فایل‌های بازدیدشده شما کاملاً محرمانه است و بدون رضایت کتبی در اختیار ثالث قرار نمی‌گیرد. داده‌ها روی سرورهای داخل کشور با رمزنگاری نگهداری و با درخواست شما حذف می‌شوند. عضویت در خبرنامه با یک کلیک لغو می‌شود.</p></div>
+      <div><h3 class="font-black text-lg mb-2 flex items-center gap-2"><span class="w-8 h-8 rounded-xl badge-gold text-deep font-black flex items-center justify-center text-sm">۴</span> تضمین صحت فایل‌ها</h3><p class="text-muted">هر ملک پیش از انتشار، استعلام سند، پایان‌کار، بدهی شهرداری و رهن بانکی می‌شود. در صورت مغایرت اساسی مشخصات با واقعیت، هزینه کارشناسی عودت و قرارداد بدون جریمه فسخ می‌شود.</p></div>
+      <div class="rounded-2xl bg-deep/60 border border-line p-5 flex flex-wrap items-center justify-between gap-3"><span class="text-xs text-muted">سؤالی درباره قراردادها دارید؟ وکیل ملکی ما رایگان پاسخ می‌دهد.</span><button onclick="openConsult('legal')" class="gold-btn px-5 py-3 rounded-xl text-xs">مشاوره حقوقی رایگان</button></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-[#040a15] border-t border-line pt-14 pb-7">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div><div class="flex items-center gap-3 mb-4"><span class="w-11 h-11 rounded-2xl flex items-center justify-center font-black text-xl text-deep" style="background:linear-gradient(135deg,#F6E6A8,#C9A227 60%,#8a6f16)">هـ</span><div><div class="font-black">املاک <span class="gold-text">هخامنش</span></div><div class="text-[10px] tracking-[.25em] text-muted">LUXURY ESTATE • 1387</div></div></div>
+      <p class="text-xs text-muted leading-7">مرجع تخصصی املاک لوکس شمال تهران؛ خرید، فروش، رهن و اجاره با امنیت حقوقی کامل و تجربه‌ای در شأن شما.</p>
+      <div class="flex gap-2 mt-4"><a href="#" aria-label="اینستاگرام" class="w-10 h-10 rounded-xl border border-white/10 flex items-center justify-center hover:border-gold hover:text-gold transition"><i data-lucide="instagram" class="w-4 h-4"></i></a><a href="#" aria-label="لینکدین" class="w-10 h-10 rounded-xl border border-white/10 flex items-center justify-center hover:border-gold hover:text-gold transition"><i data-lucide="linkedin" class="w-4 h-4"></i></a><a href="#" aria-label="تلگرام" class="w-10 h-10 rounded-xl border border-white/10 flex items-center justify-center hover:border-gold hover:text-gold transition"><i data-lucide="send" class="w-4 h-4"></i></a><a href="#" aria-label="واتساپ" class="w-10 h-10 rounded-xl border border-white/10 flex items-center justify-center hover:border-gold hover:text-gold transition"><i data-lucide="message-circle" class="w-4 h-4"></i></a></div></div>
+    <div><h4 class="font-bold mb-4 text-sm">دسترسی سریع</h4><ul class="space-y-2.5 text-sm text-muted"><li><button data-nav="home" class="hover:text-champagne transition">خانه</button></li><li><button data-nav="listings" class="hover:text-champagne transition">بانک املاک</button></li><li><button data-nav="about" class="hover:text-champagne transition">درباره هخامنش</button></li><li><button data-nav="blog" class="hover:text-champagne transition">مجله ملکی</button></li><li><button data-nav="contact" class="hover:text-champagne transition">تماس با ما</button></li><li><button data-nav="terms" class="hover:text-champagne transition">قوانین و حریم خصوصی</button></li></ul></div>
+    <div><h4 class="font-bold mb-4 text-sm">محبوب‌ترین محله‌ها</h4><ul class="space-y-2.5 text-sm text-muted"><li><button onclick="goListings({city:'الهیه'})" class="hover:text-champagne transition">الهیه و فرشته</button></li><li><button onclick="goListings({city:'زعفرانیه'})" class="hover:text-champagne transition">زعفرانیه</button></li><li><button onclick="goListings({city:'فرمانیه'})" class="hover:text-champagne transition">فرمانیه و نیاوران</button></li><li><button onclick="goListings({city:'لواسان'})" class="hover:text-champagne transition">لواسان</button></li><li><button onclick="goListings({city:'سعادت‌آباد'})" class="hover:text-champagne transition">سعادت‌آباد</button></li></ul></div>
+    <div><h4 class="font-bold mb-4 text-sm">تماس و نماد اعتماد</h4><div class="text-sm space-y-2.5 text-muted"><p class="flex gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i> فرشته، مریم شرقی، پلاک ۳۲</p><p class="flex gap-2"><i data-lucide="phone" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i> <span dir="ltr">021-2200 8888</span></p><p class="flex gap-2"><i data-lucide="mail" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i> <span dir="ltr">info@hakhamanesh.estate</span></p></div>
+      <form class="newsletter-form flex gap-2 mt-4"><input type="email" required placeholder="ایمیل" class="inp !py-2.5 text-xs" aria-label="ایمیل"><button class="gold-btn px-4 rounded-xl" aria-label="عضویت"><i data-lucide="arrow-left" class="w-4 h-4"></i></button></form></div>
+  </div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 mt-10 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted"><span>© <span id="year">۱۴۰۵</span> املاک هخامنش · کلیه حقوق محفوظ است.</span><span class="flex items-center gap-1.5"><i data-lucide="shield-check" class="w-4 h-4 text-gold"></i> مجوز رسمی اتحادیه · کد رهگیری هوشمند</span></div>
+</footer>
+
+<!-- FLOATING -->
+<div class="fixed bottom-5 left-5 z-[70] flex flex-col gap-2.5">
+  <button id="toTop" class="w-12 h-12 rounded-2xl glass border border-line items-center justify-center hover:border-gold transition hidden" style="display:none" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="بازگشت به بالا"><i data-lucide="arrow-up" class="w-5 h-5 mx-auto"></i></button>
+  <a href="tel:02122008888" class="w-12 h-12 rounded-2xl gold-btn flex items-center justify-center shadow-luxe" aria-label="تماس سریع"><i data-lucide="phone-call" class="w-5 h-5"></i></a>
+</div>
+
+<!-- CONSULT MODAL -->
+<div id="consultModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
+  <div class="absolute inset-0 bg-black/75 backdrop-blur-sm" onclick="closeConsult()"></div>
+  <div class="relative w-full max-w-lg card-luxe !bg-[#0d1a2e] rounded-[26px] p-7 sm:p-8 max-h-[92vh] overflow-y-auto">
+    <button onclick="closeConsult()" class="absolute top-4 left-4 w-10 h-10 rounded-xl border border-white/10 flex items-center justify-center hover:border-gold" aria-label="بستن"><i data-lucide="x" class="w-5 h-5"></i></button>
+    <div id="consultBody">
+      <div class="w-14 h-14 rounded-2xl badge-gold flex items-center justify-center mb-4"><i data-lucide="crown" class="w-7 h-7"></i></div>
+      <h3 class="text-xl font-black">رزرو <span class="gold-text">مشاوره رایگان</span></h3>
+      <p class="text-xs text-muted mt-1 mb-5 leading-6">۳۰ دقیقه گفت‌وگو با مشاور ارشد منطقه · حضوری، تلفنی یا تصویری</p>
+      <div class="space-y-3">
+        <input id="qName" class="inp text-sm" placeholder="نام و نام خانوادگی *">
+        <input id="qPhone" class="inp text-sm" inputmode="tel" placeholder="موبایل (09...) *">
+        <div class="grid grid-cols-2 gap-3">
+          <select id="qType" class="inp text-sm"><option value="buy">خرید ملک</option><option value="sell">فروش ملک</option><option value="rent">رهن و اجاره</option><option value="invest">سرمایه‌گذاری</option><option value="visit">بازدید ملک</option><option value="project">پروژه هخامنش پالاس</option><option value="loan">مشاوره وام</option><option value="legal">مشاوره حقوقی</option></select>
+          <select id="qTime" class="inp text-sm"><option>امروز عصر</option><option>فردا صبح</option><option>فردا عصر</option><option>پایان هفته</option></select>
+        </div>
+        <textarea id="qMsg" rows="3" class="inp text-sm" placeholder="توضیح کوتاه (اختیاری)"></textarea>
+        <button onclick="submitConsult()" class="gold-btn w-full py-4 rounded-2xl text-sm flex items-center justify-center gap-2"><i data-lucide="calendar-check" class="w-5 h-5"></i> تأیید رزرو مشاوره</button>
+        <p class="text-[11px] text-muted text-center flex items-center justify-center gap-1.5"><i data-lucide="lock" class="w-3.5 h-3.5 text-gold"></i> اطلاعات شما کاملاً محرمانه می‌ماند</p>
+      </div>
+    </div>
+    <div id="consultSuccess" class="hidden text-center py-8">
+      <span class="w-20 h-20 rounded-full bg-emerald-500/15 border border-emerald-400/40 flex items-center justify-center mx-auto mb-4"><i data-lucide="check" class="w-10 h-10 text-emerald-400"></i></span>
+      <h3 class="font-black text-xl">درخواست شما ثبت شد</h3>
+      <p class="text-sm text-muted mt-2 leading-7">کارشناس ارشد هخامنش در بازه انتخابی با شما تماس می‌گیرد.<br>کد پیگیری: <span id="consultCode" class="text-champagne font-bold"></span></p>
+      <button onclick="closeConsult()" class="gold-btn px-8 py-3.5 rounded-xl text-sm mt-5">متوجه شدم</button>
+    </div>
+  </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="fixed inset-0 z-[110] hidden items-center justify-center p-4 bg-black/90 backdrop-blur" onclick="closeLightbox()">
+  <img id="lightboxImg" src="" alt="نمایش بزرگ" class="max-w-full max-h-[88vh] rounded-2xl border border-gold/40 shadow-luxe">
+  <button class="absolute top-5 left-5 w-11 h-11 rounded-xl bg-white/10 border border-white/20 flex items-center justify-center" aria-label="بستن"><i data-lucide="x" class="w-5 h-5"></i></button>
+</div>
+
+<!-- TOASTS -->
+<div id="toastWrap" class="fixed bottom-6 right-5 z-[120] space-y-3 max-w-[340px]"></div>
+
+<script>
+/* ============ DATA ============ */
+const U = (id,w=1200)=>`https://images.unsplash.com/${id}?q=80&w=${w}&auto=format&fit=crop`;
+const AGENTS = [
+ {name:"مهندس آرش هخامنش‌نژاد",role:"مدیر ارشد فروش لوکس",exp:"۱۴ سال تجربه",phone:"0912-100-2233",img:U('photo-1560250097-0b93528c311a',400)},
+ {name:"سرکار خانم نگار شریفی",role:"مشاور ارشد اجاره و سرمایه‌گذاری",exp:"۹ سال تجربه",phone:"0912-455-6677",img:U('photo-1573496359142-b8d87734a5a2',400)},
+ {name:"مهندس کیان مهراد",role:"کارشناس رسمی ویلا و زمین",exp:"۱۱ سال تجربه",phone:"0912-889-0011",img:U('photo-1472099645785-5658abf4ff4e',400)}
+];
+const TEAM = [
+ {name:"کوروش هخامنش",role:"بنیان‌گذار و مدیرعامل",img:U('photo-1560250097-0b93528c311a',500)},
+ {name:"نگار شریفی",role:"مدیر فروش شمال تهران",img:U('photo-1573496359142-b8d87734a5a2',500)},
+ {name:"کیان مهراد",role:"مدیر دپارتمان ویلا",img:U('photo-1472099645785-5658abf4ff4e',500)},
+ {name:"سارا اعتماد",role:"مدیر حقوقی و قراردادها",img:U('photo-1580489944761-15a19d654956',500)}
+];
+const PROPERTIES = [
+ {id:1,title:"پنت‌هاوس تریپلکس الهیه با روف‌گاردن ۳۶۰ درجه",code:"HX-1042",deal:"sale",dealLabel:"فروش",type:"penthouse",typeLabel:"پنت‌هاوس",city:"تهران",hood:"الهیه",area:420,rooms:4,baths:4,floor:"طبقات ۱۴ تا ۱۶",age:2,parking:3,priceLabel:"۶۸ میلیارد تومان",priceSub:"متری ۱۶۲ میلیون · سند تک‌برگ",priceSort:68,featured:true,views:2480,date:"2026-09-20",agent:0,amen:["روف‌گاردن","استخر خصوصی","سونا و جکوزی","سیستم هوشمند","لابی مجلل","نگهبانی ۲۴ ساعته","شومینه","آشپزخانه جزیره"],images:[U('photo-1600607687939-ce8a6c25118c'),U('photo-1600566753086-00f18fb6b3ea'),U('photo-1600210492486-724fe5c67fb0')],desc:"تریپلکس کم‌نظیر الهیه با ویوی ابدی شهر و کوهستان؛ روف‌گاردن ۱۸۰ متری با آشپزخانه تابستانه، سالن سینمای خصوصی و متریال وارداتی. لابی ۹ متری، ۳ پارکینگ باکس و انباری بزرگ. مناسب سخت‌پسندان واقعی."},
+ {id:2,title:"ویلای مدرن استخردار لواسان با چشم‌انداز سد",code:"HX-1038",deal:"sale",dealLabel:"فروش",type:"villa",typeLabel:"ویلا",city:"لواسان",hood:"لواسان · بلوار اصلی",area:600,land:950,rooms:5,baths:5,floor:"دوبلکس + شاه‌نشین",age:1,parking:4,priceLabel:"۸۵ میلیارد تومان",priceSub:"۹۵۰ متر زمین · پایان‌کار",priceSort:85,featured:true,views:3120,date:"2026-09-18",agent:2,amen:["استخر چهارفصل","سونا و جکوزی","روف‌گاردن","آلاچیق","سیستم هوشمند","زمین تنیس","نگهبانی","شومینه"],images:[U('photo-1613490493576-7fde63acd811'),U('photo-1512917774080-9991f1c4c750'),U('photo-1600573472592-401b489a3cdc')],desc:"شاهکار معماری مدرن در بهترین لوکیشن لواسان؛ نمای بتن اکسپوز و شیشه سکوریت، استخر اینفینیتی رو به سد، سوئیت مهمان مستقل و محوطه‌سازی حرفه‌ای با آبیاری هوشمند. سندی شش‌دانگ و آماده انتقال."},
+ {id:3,title:"آپارتمان نوساز ۱۸۵ متری زعفرانیه، نورگیر عالی",code:"HX-1031",deal:"sale",dealLabel:"فروش",type:"apartment",typeLabel:"آپارتمان",city:"زعفرانیه",hood:"زعفرانیه · مقدس اردبیلی",area:185,rooms:3,baths:3,floor:"طبقه ۷ از ۱۲",age:0,parking:2,priceLabel:"۳۲ میلیارد تومان",priceSub:"متری ۱۷۳ میلیون · کلید نخورده",priceSort:32,featured:true,views:1890,date:"2026-09-15",agent:0,amen:["لابی مجلل","سالن اجتماعات","باشگاه بدنسازی","پارکینگ مزاحم","انباری","بالکن","آسانسور"],images:[U('photo-1522708323590-d24dbb6b0267'),U('photo-1600585154526-990dced4db0d'),U('photo-1600566752355-35792bedcfea')],desc:"واحد کلیدنخورده برج باغ زعفرانیه با پلان بی‌نقص، سه خواب مستر، آشپزخانه matte ایتالیایی و ویوی کوهستان. مشاعات کامل شامل لابی، سالن ورزش و فضای بازی کودک."},
+ {id:4,title:"ویلا باغ ۲۰۰۰ متری کردان با عمارت کلاسیک",code:"HX-1027",deal:"sale",dealLabel:"فروش",type:"villa",typeLabel:"ویلا",city:"کردان",hood:"کردان · شهرک ۱۱۰",area:450,land:2000,rooms:4,baths:4,floor:"دوبلکس",age:5,parking:3,priceLabel:"۲۸ میلیارد تومان",priceSub:"۲۰۰۰ متر باغ مثمر",priceSort:28,featured:false,views:1430,date:"2026-09-10",agent:2,amen:["استخر روباز","آلاچیق","باغ مثمر","شومینه","انباری","پارکینگ","نگهبانی شهرک"],images:[U('photo-1600596542815-ffad4c1539a9'),U('photo-1600585154340-be6161a56a0c'),U('photo-1500382017468-9049fed747ef')],desc:"باغ‌ویلای دنج در امن‌ترین شهرک کردان؛ درختان ۲۰ ساله گردو و گیلاس، استخر بزرگ، عمارت با سقف ۴ متری و تراس ۸۰ متری. ایده‌آل برای آخر هفته و سرمایه‌گذاری."},
+ {id:5,title:"دفتر اداری ۲۴۰ متری ونک، مناسب هلدینگ",code:"HX-1022",deal:"sale",dealLabel:"فروش",type:"commercial",typeLabel:"تجاری / اداری",city:"ونک",hood:"ونک · ملاصدرا",area:240,rooms:3,baths:2,floor:"طبقه ۴",age:3,parking:4,priceLabel:"۴۵ میلیارد تومان",priceSub:"سند اداری · ۴ پارکینگ",priceSort:45,featured:true,views:980,date:"2026-09-08",agent:1,amen:["لابی","سالن کنفرانس","سیستم اعلام حریق","آسانسور","پارکینگ","نگهبانی"],images:[U('photo-1497366216548-37526070297c'),U('photo-1486406146926-c627a92ad1ab'),U('photo-1524758631624-e2822e304c36')],desc:"واحد اداری فول‌فرنیش در برج تجاری ملاصدرا؛ پلان باز، اتاق مدیریت با ویوی شهر، سالن کنفرانس ۲۰ نفره و دسترسی عالی به مترو و بزرگراه. اجاره‌داری تضمینی ۸٪ سالانه."},
+ {id:6,title:"آپارتمان ۱۵۰ متری سعادت‌آباد (رهن و اجاره)",code:"HX-1019",deal:"rent",dealLabel:"رهن و اجاره",type:"apartment",typeLabel:"آپارتمان",city:"سعادت‌آباد",hood:"سعادت‌آباد · علامه",area:150,rooms:2,baths:2,floor:"طبقه ۳",age:4,parking:1,priceLabel:"رهن ۲٫۵ میلیارد + ماهی ۸۵ میلیون",priceSub:"قابل تبدیل · فول امکانات",priceSort:2.5,featured:true,views:2210,date:"2026-09-22",agent:1,amen:["پارکینگ","انباری","آسانسور","بالکن","لابی","نگهبانی"],images:[U('photo-1600607687920-4e2a09cf159d'),U('photo-1600566753086-00f18fb6b3ea'),U('photo-1600210492486-724fe5c67fb0')],desc:"واحد نورگیر و تمیز در برج آرام علامه؛ دو خواب مستر، کابینت مدرن، اسپلیت داکت و بالکن بزرگ رو به پارک. دسترسی عالی به میدان کاج و اتوبان یادگار."},
+ {id:7,title:"خانه دوبلکس ۳۲۰ متری نیاوران با حیاط اختصاصی",code:"HX-1015",deal:"sale",dealLabel:"فروش",type:"house",typeLabel:"خانه",city:"نیاوران",hood:"نیاوران · جماران",area:320,land:410,rooms:4,baths:4,floor:"دوبلکس",age:6,parking:2,priceLabel:"۵۲ میلیارد تومان",priceSub:"۴۱۰ متر عرصه · دو نبش",priceSort:52,featured:false,views:1760,date:"2026-08-30",agent:0,amen:["حیاط اختصاصی","شومینه","سونا","انباری","پارکینگ","بالکن","سیستم هوشمند"],images:[U('photo-1580587771525-78b9dba3b914'),U('photo-1600585154340-be6161a56a0c'),U('photo-1564013799919-ab600027ffc6')],desc:"خانه دوبلکس دو نبش در کوچه‌ای دنج؛ حیاط ۹۰ متری با آبنما، شاه‌نشین با سقف چوبی و آشپزخانه فرنگی و سنتی. سند شش‌دانگ، بدون حتی یک روز اجاره."},
+ {id:8,title:"زمین ۸۰۰ متری فشم با ویوی رودخانه",code:"HX-1011",deal:"sale",dealLabel:"فروش",type:"land",typeLabel:"زمین",city:"تهران",hood:"فشم · زایگان",area:800,rooms:0,baths:0,floor:"—",age:0,parking:0,priceLabel:"۱۸ میلیارد تومان",priceSub:"متری ۲۲٫۵ میلیون · دیوارکشی",priceSort:18,featured:false,views:860,date:"2026-08-25",agent:2,amen:["دیوارکشی","آب و برق","جاده آسفالت","نگهبانی منطقه"],images:[U('photo-1500382017468-9049fed747ef'),U('photo-1500076656116-558758c991c1'),U('photo-1416331108676-a22ccb276e35')],desc:"قطعه‌ای بی‌نظیر در زایگان با بر ۲۵ متری و ویوی رودخانه؛ مناسب ساخت ۲ ویلای دوبلکس با جواز ۶۰٪ تراکم. استعلام جهاد و منابع طبیعی اخذ شده."},
+ {id:9,title:"آپارتمان ۲۲۰ متری فرمانیه (رهن و اجاره)",code:"HX-1008",deal:"rent",dealLabel:"رهن و اجاره",type:"apartment",typeLabel:"آپارتمان",city:"فرمانیه",hood:"فرمانیه · دیباجی",area:220,rooms:3,baths:3,floor:"طبقه ۹",age:2,parking:2,priceLabel:"رهن ۴ میلیارد + ماهی ۱۲۰ میلیون",priceSub:"برج باغ · فول فرنیش",priceSort:4,featured:true,views:1980,date:"2026-09-21",agent:1,amen:["لابی مجلل","استخر","سونا","باشگاه","پارکینگ","انباری","نگهبانی ۲۴ ساعته"],images:[U('photo-1600121848594-d8644e57abab'),U('photo-1600607687939-ce8a6c25118c'),U('photo-1600585154526-990dced4db0d')],desc:"واحد فول‌فرنیش برند در برج باغ فرمانیه؛ وسایل بوکن و بوش، سه خواب مستر، ویوی ۲۷۰ درجه شهر. مشاعات هتلی شامل استخر، اسپا و سالن سینما."},
+ {id:10,title:"مغازه ۱۲۰ متری جردن، بر خیابان اصلی",code:"HX-1005",deal:"rent",dealLabel:"رهن و اجاره",type:"commercial",typeLabel:"تجاری / اداری",city:"جردن",hood:"جردن · نلسون ماندلا",area:120,rooms:1,baths:1,floor:"همکف",age:8,parking:1,priceLabel:"رهن ۳ میلیارد + ماهی ۱۸۰ میلیون",priceSub:"بر ۱۲ متری · سرقفلی",priceSort:3,featured:false,views:1120,date:"2026-08-28",agent:1,amen:["ویترین بزرگ","انباری","سیستم امنیتی","پارکینگ"],images:[U('photo-1486406146926-c627a92ad1ab'),U('photo-1441986300917-64674bd600d8'),U('photo-1497366216548-37526070297c')],desc:"موقعیت تجاری طلایی نبش جردن؛ مناسب برند پوشاک، کافه و شوروم. تردد پیاده بالا، ویترین ۱۲ متری و ارتفاع سقف ۴٫۵ متر. قرارداد بلندمدت با سرقفلی."},
+ {id:11,title:"ویلای استخردار لواسان (اجاره سالانه مبله)",code:"HX-1002",deal:"rent",dealLabel:"رهن و اجاره",type:"villa",typeLabel:"ویلا",city:"لواسان",hood:"لواسان · باستی",area:500,land:1100,rooms:4,baths:4,floor:"تریبلکس",age:3,parking:3,priceLabel:"رهن ۶ میلیارد + ماهی ۲۵۰ میلیون",priceSub:"مبله کامل · استخر چهارفصل",priceSort:6,featured:false,views:1640,date:"2026-09-12",agent:2,amen:["استخر چهارفصل","سونا و جکوزی","مبله کامل","نگهبانی","سیستم هوشمند","آلاچیق"],images:[U('photo-1512917774080-9991f1c4c750'),U('photo-1613490493576-7fde63acd811'),U('photo-1600596542815-ffad4c1539a9')],desc:"تریبلکس مبله لوکس در باستی؛ دکوراسیون ایتالیایی، استخر سرپوشیده، سینمای خانگی و باغ ۱۱۰۰ متری. مناسب سفارتخانه‌ها و مدیران ارشد. قرارداد رسمی یک‌ساله."},
+ {id:12,title:"آپارتمان ۱۳۵ متری شهرک غرب، خوش‌نقشه",code:"HX-0998",deal:"sale",dealLabel:"فروش",type:"apartment",typeLabel:"آپارتمان",city:"شهرک غرب",hood:"شهرک غرب · فاز ۴",area:135,rooms:2,baths:2,floor:"طبقه ۲",age:7,parking:1,priceLabel:"۱۸٫۵ میلیارد تومان",priceSub:"متری ۱۳۷ میلیون · وام‌دار",priceSort:18.5,featured:false,views:1340,date:"2026-08-20",agent:0,amen:["پارکینگ","انباری","آسانسور","بالکن","پارک نزدیک"],images:[U('photo-1560448204-e02f11c3d0e2'),U('photo-1600607687920-4e2a09cf159d'),U('photo-1600210492486-724fe5c67fb0')],desc:"واحد خوش‌نقشه و نورگیر فاز ۴؛ بازسازی‌شده با کابینت و سرویس‌های نو، نزدیک مدرسه و مرکز خرید میلاد نور. گزینه عالی خانه‌اولی‌ها با امکان استفاده از وام."},
+ {id:13,title:"پنت‌هاوس ۵۰۰ متری جردن با استخر روی بام",code:"HX-0995",deal:"sale",dealLabel:"فروش",type:"penthouse",typeLabel:"پنت‌هاوس",city:"جردن",hood:"جردن · گلخانه",area:500,rooms:5,baths:6,floor:"طبقه ۱۸",age:1,parking:4,priceLabel:"۹۵ میلیارد تومان",priceSub:"متری ۱۹۰ میلیون · لاکچری",priceSort:95,featured:true,views:2890,date:"2026-09-19",agent:0,amen:["استخر روی بام","روف‌گاردن","سینمای خصوصی","سونا و جکوزی","سیستم هوشمند","لابی","نگهبانی"],images:[U('photo-1600596542815-ffad4c1539a9'),U('photo-1600607687939-ce8a6c25118c'),U('photo-1600566753086-00f18fb6b3ea')],desc:"پنت‌هاوس امضای جردن؛ ۵۰۰ متر با ۲۰۰ متر تراس، استخر اختصاصی روی بام، آسانسور اختصاصی و ویوی ۳۶۰ درجه تهران. متریال هرمس و ورساچه در دکوراسیون."},
+ {id:14,title:"خانه کلنگی ۳۰۰ متری قلهک (سرمایه‌گذاری ساخت)",code:"HX-0991",deal:"sale",dealLabel:"فروش",type:"house",typeLabel:"خانه",city:"قلهک",hood:"قلهک · شریفی",area:300,land:300,rooms:3,baths:1,floor:"یک طبقه",age:30,parking:1,priceLabel:"۲۴ میلیارد تومان",priceSub:"جواز ۴ طبقه · دو نبش",priceSort:24,featured:false,views:720,date:"2026-08-15",agent:2,amen:["جواز ساخت","دو نبش","آب و برق و گاز"],images:[U('photo-1564013799919-ab600027ffc6'),U('photo-1580587771525-78b9dba3b914'),U('photo-1500382017468-9049fed747ef')],desc:"فرصت طلایی بسازبفروشی در قلهک؛ ۳۰۰ متر دو نبش با جواز ۴ طبقه ۸ واحدی، تراکم عالی و گذر ۱۲ متری. مشارکت با سازنده معتبر هخامنش نیز امکان‌پذیر است."}
+];
+const BLOGS = [
+ {id:1,title:"راهنمای خرید آپارتمان در شمال تهران در ۱۴۰۵",cat:"راهنمای خرید",date:"۱۲ شهریور ۱۴۰۵",read:"۸ دقیقه",img:U('photo-1560518883-ce09059eeffa'),views:"۴٫۲ هزار",excerpt:"از متریال تا سند؛ ۱۲ نکته‌ای که پیش از خرید در الهیه، زعفرانیه و فرمانیه باید بدانید.",body:["بازار شمال تهران در ۱۴۰۵ وارد فاز تثبیت شده است؛ فاصله قیمت پیشنهادی تا معامله به ۸ تا ۱۲ درصد رسیده و این یعنی قدرت چانه‌زنی خریدار بیشتر از همیشه است.","اولین قدم، راستی‌آزمایی سند است: تک‌برگ بودن، عدم بازداشت، پایان‌کار و صورت‌مجلس تفکیکی را حتماً از دفتر اسناد استعلام بگیرید. در هخامنش این استعلام پیش از بازدید انجام می‌شود.","دوم، متریال را جدی بگیرید: آسانسور، تأسیسات و عایق‌بندی ۷۰٪ هزینه نگهداری آینده شماست. واحدهای نوساز برج‌باغ‌ها معمولاً ۱۵٪ گران‌تر اما ۴۰٪ کم‌هزینه‌ترند.","پیشنهاد ما: ۳ محله را هم‌زمان رصد کنید، سقف بودجه را ۱۰٪ شناور بگذارید و حتماً با مشاوری که خودش در همان محله معامله کرده پیش بروید."]},
+ {id:2,title:"رهن کامل یا اجاره ماهانه؟ فرمول تبدیل ۱۴۰۵",cat:"رهن و اجاره",date:"۲۸ مرداد ۱۴۰۵",read:"۶ دقیقه",img:U('photo-1522708323590-d24dbb6b0267'),views:"۳٫۸ هزار",excerpt:"با نرخ تبدیل جدید، کدام به‌صرفه‌تر است؟ مثال عددی برای آپارتمان ۱۵۰ متری سعادت‌آباد.",body:["نرخ تبدیل رهن به اجاره در تهران امروز حدود هر ۱ میلیارد تومان معادل ۳۰ تا ۳۳ میلیون اجاره ماهانه است. یعنی رهن ۲٫۵ میلیاردی سعادت‌آباد تقریباً ۸۰ میلیون اجاره می‌ارزد.","اگر نقدینگی دارید، رهن کامل معمولاً ۸ تا ۱۰٪ ارزان‌تر تمام می‌شود و ریسک افزایش سالانه اجاره را حذف می‌کند. اما اگر پول‌تان در بازار دیگری بازده بالای ۳۵٪ دارد، اجاره ماهانه هوشمندانه‌تر است.","نکته حقوقی: حتماً کد رهگیری، چک تضمین تخلیه و صورت‌جلسه تحویل وسایل را در قرارداد بگنجانید. تیم اجاره هخامنش یک سال پشتیبانی حقوقی رایگان می‌دهد."]},
+ {id:3,title:"سرمایه‌گذاری در زمین کردان و فشم؛ سود ۳ ساله چقدر بود؟",cat:"سرمایه‌گذاری",date:"۱۵ مرداد ۱۴۰۵",read:"۱۰ دقیقه",img:U('photo-1500382017468-9049fed747ef'),views:"۵٫۱ هزار",excerpt:"بازده ۱۸۰٪ در ۳ سال؛ اما کدام قطعه‌ها تله حقوقی دارند؟",body:["زمین‌های سنددار داخل بافت کردان در ۳ سال گذشته به‌طور میانگین ۱۸۰٪ رشد کرده‌اند؛ در حالی که زمین‌های قولنامه‌ای حاشیه فقط ۶۰٪ رشد و ریسک سند بالا داشته‌اند.","سه فیلتر طلایی ما: ۱) سند تک‌برگ داخل بافت ۲) بر مناسب و گذر بالای ۸ متر ۳) فاصله کمتر از ۱۰ دقیقه تا اتوبان. زمین زایگان فشم هر سه را دارد.","اگر بودجه‌تان زیر ۲۰ میلیارد است، مشارکت در ساخت قلهک با بازده ۴۵٪ در ۱۸ ماه، گزینه کم‌ریسک‌تری از خرید زمین دورافتاده است."]},
+ {id:4,title:"۱۰ تله حقوقی در مبایعه‌نامه که باید بشناسید",cat:"حقوق ملکی",date:"۲ مرداد ۱۴۰۵",read:"۷ دقیقه",img:U('photo-1450101499163-c8848c66ca85'),views:"۶ هزار",excerpt:"از وجه‌التزام تا شرط فسخ؛ وکیلمان قدم‌به‌قدم توضیح می‌دهد.",body:["بزرگ‌ترین اشتباه، نوشتن مبایعه‌نامه دستی بدون کد رهگیری است؛ در دعاوی، همین یک خط می‌تواند ۲ سال شما را در دادگاه معطل کند.","حتماً این ۴ بند را بگنجانید: وجه‌التزام روزانه تأخیر در سند، شرط فسخ در صورت بازداشت ملک، تعیین دقیق مشاعات و پارکینگ، و نحوه تسویه وام و رهن. در قراردادهای هخامنش هر ۴ بند استاندارد است.","توصیه نهایی: ۱۰٪ ثمن را تا روز سند نزد مشاور امین نگه دارید؛ این ساده‌ترین بیمه شماست."]},
+ {id:5,title:"هوم‌استیجینگ؛ چگونه خانه‌تان را ۱۵٪ گران‌تر بفروشید؟",cat:"فروش",date:"۲۰ تیر ۱۴۰۵",read:"۵ دقیقه",img:U('photo-1600585154526-990dced4db0d'),views:"۲٫۹ هزار",excerpt:"با ۵۰ میلیون هزینه دکور، ۳ میلیارد بیشتر بفروشید؛ تجربه واقعی فروش در نیاوران.",body:["خانه‌ای که بوی تازگی، نور کامل و فضای خلوت دارد، در ذهن خریدار ۱۲ تا ۱۵٪ ارزشمندتر است. ما در نیاوران با هوم‌استیجینگ ۴۵ میلیونی، ۲٫۸ میلیارد بالاتر از پیشنهاد اول فروختیم.","سه اقدام کم‌هزینه و پربازده: رنگ روشن دیوارها، نور مخفی آشپزخانه و حذف ۳۰٪ وسایل. عکاسی سینمایی و تیزر هوایی را ما رایگان انجام می‌دهیم.","بازدید اول، طلایی است؛ ۸۰٪ تصمیم خرید در ۹۰ ثانیه اول گرفته می‌شود. پس روز عکاسی، خانه باید موزه باشد."]},
+ {id:6,title:"پیش‌بینی بازار مسکن تهران تا پایان ۱۴۰۵",cat:"تحلیل بازار",date:"۵ تیر ۱۴۰۵",read:"۹ دقیقه",img:U('photo-1486406146926-c627a92ad1ab'),views:"۷٫۴ هزار",excerpt:"رکود یا جهش؟ سناریوهای محتمل برای شمال تهران و پیشنهاد سبد ملکی.",body:["سناریوی پایه ما: رشد ۱۵ تا ۲۰٪ تا پایان سال برای مناطق ۱ و ۳، با پیشتازی واحدهای نوساز کوچک‌متراژ و ویلاهای سنددار لواسان.","محرک‌ها: کاهش نرخ سود بانکی، ورود تقاضای سرمایه‌ای به ملک امن و کمبود عرضه نوساز در الهیه و فرمانیه. ریسک‌ها: ریسک‌های کلان اقتصادی و طولانی‌شدن رکود معاملات.","استراتژی پیشنهادی هخامنش: ۶۰٪ آپارتمان نقدشونده شمال، ۲۵٪ زمین سنددار حومه، ۱۵٪ نقد برای شکار فرصت‌های زیرقیمت. برای سبد اختصاصی، مشاوره رایگان رزرو کنید."]}
+];
+const TESTIS = [
+ {name:"دکتر بهنام رضایی",role:"خریدار پنت‌هاوس الهیه",text:"از روز اول حس کردم با یک تیم مهندسی طرفم نه بنگاه سنتی. گزارش ۴۰ صفحه‌ای کارشناسی، مذاکره‌ای که ۳ میلیارد زیر قیمت تابلو تمام شد و سندی که بدون یک دقیقه معطلی منتقل شد. تجربه‌ای در شأن اسم هخامنش.",img:U('photo-1472099645785-5658abf4ff4e',200)},
+ {name:"خانم مریم کاظمی",role:"فروشنده ویلا در لواسان",text:"ویلام ۸ ماه در چند آژانس خاک می‌خورد. هخامنش با عکاسی هوایی و تیزر حرفه‌ای در ۲۳ روز به ۱۲٪ بالاتر از انتظارم فروخت. شفاف، منظم و محترم؛ دقیقاً همان چیزی که از یک برند لوکس انتظار دارید.",img:U('photo-1580489944761-15a19d654956',200)},
+ {name:"مهندس سعید نادری",role:"مستأجر برج فرمانیه",text:"برای اجاره یک واحد فول‌فرنیش فرمانیه از شهرستان آمدم؛ قرارداد رسمی، استعلام کامل و پشتیبانی یک‌ساله. حتی بعد از اسباب‌کشی برای کوچک‌ترین موضوع پاسخ‌گو بودند. امنیت یعنی همین.",img:U('photo-1507003211169-0a1dd7228f2d',200)},
+ {name:"خانواده احمدی",role:"سرمایه‌گذار زمین کردان",text:"تحلیل سه‌ساله‌ای که دادند مو را از ماست بیرون کشید؛ زمینی خریدیم که هم سندش پاک بود هم رشدش تضمینی. حالا برای پروژه دوم هم فقط به هخامنش زنگ می‌زنیم.",img:U('photo-1560250097-0b93528c311a',200)}
+];
+const FAQS = [
+ {q:"کمیسیون املاک هخامنش چقدر است؟",a:"طبق تعرفه مصوب اتحادیه: در فروش ۰/۵٪ از هر طرف + مالیات، در اجاره معادل یک‌چهارم اجاره ماهانه از هر طرف. پیش از قرارداد، فاکتور شفاف صادر می‌شود و هیچ هزینه پنهانی نداریم."},
+ {q:"آیا سند و بدهی ملک استعلام می‌شود؟",a:"بله؛ برای هر فایل، استعلام ثبتی، شهرداری، دارایی و رهن بانکی توسط وکیل مجموعه انجام و گزارش مکتوب پیش از بازدید به شما تحویل داده می‌شود."},
+ {q:"برای فروش ملکم چقدر زمان لازم است؟",a:"میانگین فروش فایل‌های ویژه ما ۲۱ روز است. با عکاسی سینمایی، قیمت‌گذاری علمی و بازاریابی در ۱۲ پلتفرم، معمولاً ۳ برابر سریع‌تر از میانگین بازار می‌فروشیم."},
+ {q:"آیا امکان بازدید مجازی برای شهرستان وجود دارد؟",a:"بله؛ تور ویدیویی زنده با مشاور، تور سه‌بعدی و ارسال گزارش کارشناسی. بیعانه نیز از طریق حساب امانی امن انجام می‌شود."},
+ {q:"تبدیل رهن و اجاره با چه فرمولی است؟",a:"مبنای روز بازار تهران (هر ۱ میلیارد ≈ ۳۰ میلیون اجاره) + شرایط ملک. محاسبه دقیق و منصفانه برای هر دو طرف انجام و در قرارداد ثبت می‌شود."}
+];
+
+/* ============ STATE ============ */
+let favs = new Set();
+try{ const s = localStorage.getItem('hx_favs'); if(s) favs = new Set(JSON.parse(s)); }catch(e){}
+function saveFavs(){ try{localStorage.setItem('hx_favs',JSON.stringify([...favs]));}catch(e){} }
+let heroDeal='sale', featTab='all';
+let filters={deal:'all',type:'all',city:'all',q:'',sort:'newest',minArea:0,rooms:'all',onlyFeatured:false,amen:[]};
+let visibleCount=9, currentProp=null, currentBlogCat='همه', blogQ='', testiIdx=0;
+const faNum=n=>Number(n).toLocaleString('fa-IR');
+const typeLabel=t=>({apartment:'آپارتمان',penthouse:'پنت‌هاوس',villa:'ویلا',house:'خانه',land:'زمین',commercial:'تجاری'})[t]||t;
+function toast(msg,type='ok'){
+ const w=document.getElementById('toastWrap');
+ const d=document.createElement('div');
+ d.className='toast glass border rounded-2xl p-4 flex items-start gap-3 shadow-card '+(type==='ok'?'border-emerald-400/30':'border-red-400/30');
+ d.innerHTML=`<span class="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 ${type==='ok'?'bg-emerald-500/15 text-emerald-400':'bg-red-500/15 text-red-400'}"><i data-lucide="${type==='ok'?'check-circle-2':'alert-circle'}" class="w-5 h-5"></i></span><div class="text-sm leading-6">${msg}</div>`;
+ w.appendChild(d); lucide.createIcons();
+ setTimeout(()=>{d.style.opacity='0';d.style.transform='translateY(10px)';setTimeout(()=>d.remove(),400)},3800);
+}
+function refreshIcons(){ if(window.lucide) lucide.createIcons(); }
+
+/* ============ NAVIGATION ============ */
+function navigate(page){
+ document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+ const el=document.getElementById('page-'+page);
+ if(el) el.classList.add('active');
+ document.querySelectorAll('.nav-link').forEach(a=>a.classList.toggle('active',a.dataset.nav===page));
+ toggleMobile(false);
+ window.scrollTo({top:0,behavior:'smooth'});
+ if(page==='favorites') renderFavs();
+ if(page==='listings') renderListings();
+ refreshIcons(); observeReveals();
+}
+document.addEventListener('click',e=>{
+ const t=e.target.closest('[data-nav]');
+ if(t){e.preventDefault();navigate(t.dataset.nav);}
+});
+function toggleMobile(open){
+ const d=document.getElementById('mobileDrawer');
+ const show=open===undefined?!d.classList.contains('hidden'):open;
+ d.classList.toggle('hidden',!show);
+ document.body.style.overflow=show?'hidden':'';
+}
+document.getElementById('menuBtn').addEventListener('click',()=>toggleMobile(true));
+function goListings(o={}){
+ if(o.deal) setDeal(o.deal);
+ if(o.type) {filters.type=o.type; document.getElementById('filterType').value=o.type;}
+ if(o.city) {filters.city=o.city; document.getElementById('filterCity').value=o.city;}
+ visibleCount=9; navigate('listings'); renderListings();
+}
+function setDeal(d){
+ filters.deal=d;
+ document.querySelectorAll('#dealSeg .seg').forEach(b=>{
+  const on=b.dataset.deal===d;
+  b.classList.toggle('tab-active',on); b.classList.toggle('text-muted',!on);
+ });
+}
+
+/* ============ CARDS ============ */
+function propCard(p){
+ const isFav=favs.has(p.id);
+ return `<article class="card-luxe rounded-[24px] overflow-hidden group">
+  <div class="relative img-zoom h-60 cursor-pointer" onclick="openProperty(${p.id})">
+   <img src="${p.images[0]}" alt="${p.title}" loading="lazy" class="w-full h-full object-cover">
+   <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+   <div class="absolute top-3 right-3 flex gap-2">
+    <span class="text-[11px] font-bold px-3 py-1.5 rounded-full ${p.deal==='sale'?'badge-gold':'bg-emerald-400 text-deep'}">${p.dealLabel}</span>
+    ${p.featured?'<span class="text-[11px] font-bold px-3 py-1.5 rounded-full bg-deep/80 backdrop-blur border border-gold/50 text-champagne flex items-center gap-1">ویژه</span>':''}
+   </div>
+   <button onclick="event.stopPropagation();toggleFav(${p.id},this)" aria-label="علاقه‌مندی" class="absolute top-3 left-3 w-10 h-10 rounded-xl glass border border-white/15 flex items-center justify-center hover:border-gold transition ${isFav?'fav-active':''}"><i data-lucide="heart" class="w-4.5 h-4.5 w-5 h-5"></i></button>
+   <span class="absolute bottom-3 right-3 text-[11px] bg-deep/80 backdrop-blur px-3 py-1.5 rounded-full border border-white/10">${p.hood} · ${p.code}</span>
+  </div>
+  <div class="p-5">
+   <div class="text-gold font-black text-[17px]">${p.priceLabel}</div>
+   <div class="text-[11px] text-muted mt-0.5">${p.priceSub}</div>
+   <h3 class="font-bold text-[15px] mt-2 leading-7 line-clamp-2 min-h-[56px] cursor-pointer hover:text-champagne transition" onclick="openProperty(${p.id})">${p.title}</h3>
+   <div class="flex items-center gap-4 text-xs text-muted mt-3 pt-3 border-t border-white/5">
+    <span class="flex items-center gap-1.5"><i data-lucide="ruler" class="w-4 h-4 text-gold"></i> ${faNum(p.area)} متر</span>
+    ${p.rooms?`<span class="flex items-center gap-1.5"><i data-lucide="bed-double" class="w-4 h-4 text-gold"></i> ${faNum(p.rooms)} خواب</span>`:''}
+    ${p.baths?`<span class="flex items-center gap-1.5"><i data-lucide="bath" class="w-4 h-4 text-gold"></i> ${faNum(p.baths)} حمام</span>`:''}
+   </div>
+   <div class="grid grid-cols-2 gap-2 mt-4">
+    <button onclick="openProperty(${p.id})" class="gold-btn py-2.5 rounded-xl text-[13px] flex items-center justify-center gap-1.5"><i data-lucide="eye" class="w-4 h-4"></i> جزئیات</button>
+    <a href="tel:02122008888" onclick="event.stopPropagation()" class="ghost-btn py-2.5 rounded-xl text-[13px] flex items-center justify-center gap-1.5"><i data-lucide="phone" class="w-4 h-4"></i> تماس</a>
+   </div>
+  </div></article>`;
+}
+function toggleFav(id,btn){
+ if(favs.has(id)){favs.delete(id);toast('از علاقه‌مندی‌ها حذف شد.');}
+ else{favs.add(id);toast('به علاقه‌مندی‌ها اضافه شد. <button data-nav="favorites" class="text-gold underline mr-1">مشاهده</button>');}
+ saveFavs(); updateFavCount();
+ if(btn) btn.classList.toggle('fav-active',favs.has(id));
+ if(document.getElementById('page-favorites').classList.contains('active')) renderFavs();
+ if(currentProp && currentProp.id===id) syncDetailFav();
+ renderFeatured(false);
+}
+function updateFavCount(){
+ const f=faNum(favs.size);
+ document.getElementById('favCount').textContent=f;
+}
+
+/* ============ FEATURED / CATS / TEAM ============ */
+function renderFeatured(scroll=true){
+ let list=PROPERTIES.filter(p=>p.featured);
+ if(featTab!=='all') list=list.filter(p=>p.deal===featTab);
+ document.getElementById('featuredGrid').innerHTML=list.map(propCard).join('');
+ refreshIcons();
+}
+const CATS=[
+ {t:'apartment',n:'آپارتمان',d:'از ۱۳۵ تا ۴۲۰ متر',img:U('photo-1522708323590-d24dbb6b0267',800)},
+ {t:'villa',n:'ویلا و باغ‌ویلا',d:'لواسان، کردان، فشم',img:U('photo-1613490493576-7fde63acd811',800)},
+ {t:'penthouse',n:'پنت‌هاوس',d:'تجربه زندگی در ابرها',img:U('photo-1600596542815-ffad4c1539a9',800)},
+ {t:'house',n:'خانه و دوبلکس',d:'حیاط‌دارهای اصیل',img:U('photo-1580587771525-78b9dba3b914',800)},
+ {t:'land',n:'زمین',d:'سرمایه‌گذاری مطمئن',img:U('photo-1500382017468-9049fed747ef',800)},
+ {t:'commercial',n:'تجاری و اداری',d:'موقعیت‌های طلایی',img:U('photo-1486406146926-c627a92ad1ab',800)}
+];
+function renderCats(){
+ const counts={}; PROPERTIES.forEach(p=>counts[p.type]=(counts[p.type]||0)+1);
+ document.getElementById('catGrid').innerHTML=CATS.map(c=>`
+  <button onclick="goListings({type:'${c.t}'})" class="relative rounded-3xl overflow-hidden h-52 sm:h-64 group text-right border border-white/5 hover:border-gold/50 transition">
+   <img src="${c.img}" alt="${c.n}" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-[1.2s]">
+   <div class="absolute inset-0" style="background:linear-gradient(to top,rgba(7,17,31,.95) 10%,rgba(7,17,31,.25) 60%,transparent)"></div>
+   <div class="absolute bottom-0 right-0 left-0 p-5 flex items-end justify-between">
+    <div><div class="font-black text-lg">${c.n}</div><div class="text-xs text-champagne mt-1">${c.d} · ${faNum((counts[c.t]||0)+18)} فایل فعال</div></div>
+    <span class="w-11 h-11 rounded-2xl badge-gold flex items-center justify-center shrink-0 group-hover:-translate-x-1 transition"><i data-lucide="arrow-left" class="w-5 h-5"></i></span>
+   </div></button>`).join('');
+ refreshIcons();
+}
+function teamCard(m){
+ return `<div class="card-luxe rounded-3xl overflow-hidden group">
+  <div class="img-zoom h-72"><img src="${m.img}" alt="${m.name}" loading="lazy" class="w-full h-full object-cover"></div>
+  <div class="p-5 text-center"><div class="font-bold">${m.name}</div><div class="text-xs text-gold mt-1">${m.role}</div>
+  <div class="flex justify-center gap-2 mt-3"><a href="tel:02122008888" class="w-9 h-9 rounded-xl border border-white/10 flex items-center justify-center hover:border-gold hover:text-gold transition" aria-label="تماس"><i data-lucide="phone" class="w-4 h-4"></i></a><button onclick="openConsult()" class="text-xs ghost-btn px-3 py-2 rounded-xl">رزرو جلسه</button></div></div></div>`;
+}
+function renderTeam(){
+ document.getElementById('teamGrid').innerHTML=TEAM.map(teamCard).join('');
+ document.getElementById('teamGridAbout').innerHTML=TEAM.map(teamCard).join('');
+ refreshIcons();
+}
+
+/* ============ LISTINGS ============ */
+const AMENS=["استخر","سونا","جکوزی","روف‌گاردن","لابی","نگهبانی","سیستم هوشمند","شومینه","پارکینگ","انباری","بالکن","مبله"];
+function renderAmenFilters(){
+ document.getElementById('amenWrap').innerHTML=AMENS.map(a=>`<button class="amen-chip text-xs px-3 py-2 rounded-xl border border-white/10 text-muted transition hover:border-gold" data-amen="${a}">${a}</button>`).join('');
+ document.querySelectorAll('.amen-chip').forEach(b=>b.addEventListener('click',()=>{
+  const v=b.dataset.amen;
+  if(filters.amen.includes(v)){filters.amen=filters.amen.filter(x=>x!==v);b.classList.remove('tab-active');b.classList.add('text-muted');}
+  else{filters.amen.push(v);b.classList.add('tab-active');b.classList.remove('text-muted');}
+  visibleCount=9;renderListings();
+ }));
+}
+function filteredProps(){
+ let l=[...PROPERTIES];
+ if(filters.deal!=='all') l=l.filter(p=>p.deal===filters.deal);
+ if(filters.type!=='all') l=l.filter(p=>p.type===filters.type);
+ if(filters.city!=='all') l=l.filter(p=>p.hood.includes(filters.city)||p.city===filters.city);
+ if(filters.rooms!=='all'){
+  if(filters.rooms==='4') l=l.filter(p=>p.rooms>=4);
+  else l=l.filter(p=>p.rooms==Number(filters.rooms));
+ }
+ if(filters.minArea>0) l=l.filter(p=>p.area>=filters.minArea);
+ if(filters.onlyFeatured) l=l.filter(p=>p.featured);
+ if(filters.amen.length) l=l.filter(p=>filters.amen.every(a=>p.amen.join(' ').includes(a)));
+ if(filters.q){const q=filters.q.trim(); l=l.filter(p=>(p.title+p.hood+p.code+p.city).includes(q));}
+ const s=filters.sort;
+ if(s==='expensive') l.sort((a,b)=>b.priceSort-a.priceSort);
+ else if(s==='cheap') l.sort((a,b)=>a.priceSort-b.priceSort);
+ else if(s==='big') l.sort((a,b)=>b.area-a.area);
+ else if(s==='rooms') l.sort((a,b)=>(b.rooms||0)-(a.rooms||0));
+ else l.sort((a,b)=>new Date(b.date)-new Date(a.date));
+ return l;
+}
+function renderListings(){
+ const list=filteredProps();
+ document.getElementById('resultCount').innerHTML=`<span class="text-white font-bold">${faNum(list.length)}</span> ملک یافت شد ${filters.deal==='sale'?'· فروش':filters.deal==='rent'?'· رهن و اجاره':''}`;
+ const chips=[];
+ if(filters.deal!=='all') chips.push({k:'deal',t:filters.deal==='sale'?'فروش':'رهن و اجاره'});
+ if(filters.type!=='all') chips.push({k:'type',t:typeLabel(filters.type)});
+ if(filters.city!=='all') chips.push({k:'city',t:filters.city});
+ if(filters.minArea>0) chips.push({k:'area',t:'بالای '+faNum(filters.minArea)+' متر'});
+ if(filters.rooms!=='all') chips.push({k:'rooms',t:filters.rooms==='4'?'۴ خواب به بالا':faNum(filters.rooms)+' خوابه'});
+ filters.amen.forEach(a=>chips.push({k:'amen:'+a,t:a}));
+ if(filters.q) chips.push({k:'q',t:'«'+filters.q+'»'});
+ document.getElementById('activeChips').innerHTML=chips.map(c=>`<span class="chip text-xs">${c.t} <button onclick="removeChip('${c.k}')" class="hover:text-red-400" aria-label="حذف"><i data-lucide="x" class="w-3.5 h-3.5"></i></button></span>`).join('');
+ const show=list.slice(0,visibleCount);
+ document.getElementById('listGrid').innerHTML=show.map(propCard).join('');
+ document.getElementById('emptyState').classList.toggle('hidden',list.length>0);
+ document.getElementById('loadMoreBtn').classList.toggle('hidden',visibleCount>=list.length);
+ refreshIcons();
+}
+function removeChip(k){
+ if(k==='deal') setDeal('all');
+ else if(k==='type'){filters.type='all';document.getElementById('filterType').value='all';}
+ else if(k==='city'){filters.city='all';document.getElementById('filterCity').value='all';}
+ else if(k==='area'){filters.minArea=0;document.getElementById('filterArea').value=0;document.getElementById('areaVal').textContent='۰ متر';}
+ else if(k==='rooms'){filters.rooms='all';document.querySelectorAll('.rseg').forEach(b=>{const on=b.dataset.room==='all';b.classList.toggle('tab-active',on);b.classList.toggle('text-muted',!on);});}
+ else if(k==='q'){filters.q='';document.getElementById('searchInput').value='';}
+ else if(k.startsWith('amen:')){const v=k.split(':')[1];filters.amen=filters.amen.filter(x=>x!==v);document.querySelectorAll('.amen-chip').forEach(b=>{if(b.dataset.amen===v){b.classList.remove('tab-active');b.classList.add('text-muted');}});}
+ renderListings();
+}
+function resetAllFilters(){
+ filters={deal:'all',type:'all',city:'all',q:'',sort:filters.sort,minArea:0,rooms:'all',onlyFeatured:false,amen:[]};
+ document.getElementById('filterType').value='all';document.getElementById('filterCity').value='all';
+ document.getElementById('searchInput').value='';document.getElementById('filterArea').value=0;
+ document.getElementById('areaVal').textContent='۰ متر';document.getElementById('onlyFeatured').checked=false;
+ setDeal('all');
+ document.querySelectorAll('.rseg').forEach(b=>{const on=b.dataset.room==='all';b.classList.toggle('tab-active',on);b.classList.toggle('text-muted',!on);});
+ document.querySelectorAll('.amen-chip').forEach(b=>{b.classList.remove('tab-active');b.classList.add('text-muted');});
+ visibleCount=9;renderListings();
+}
+
+/* ============ PROPERTY DETAIL ============ */
+function openProperty(id){
+ const p=PROPERTIES.find(x=>x.id===id); if(!p) return;
+ currentProp=p;
+ document.getElementById('propGalleryMain').src=p.images[0];
+ document.getElementById('propGalleryMain').alt=p.title;
+ document.getElementById('propThumbs').innerHTML=p.images.map((s,i)=>`<img src="${s}" onclick="setMainImg('${s}',this)" alt="${p.title} ${faNum(i+1)}" loading="lazy" class="gallery-thumb ${i===0?'active':''} rounded-2xl h-24 sm:h-28 w-full object-cover">`).join('');
+ document.getElementById('propDealBadge').textContent=p.dealLabel+' · '+p.typeLabel;
+ document.getElementById('propFeatBadge').classList.toggle('hidden',!p.featured);
+ document.getElementById('propViews').innerHTML=`${faNum(p.views)} بازدید · کد ${p.code}`;
+ document.getElementById('propLoc').textContent=p.city+' · '+p.hood;
+ document.getElementById('propCode').textContent=p.code;
+ document.getElementById('propTitle').textContent=p.title;
+ document.getElementById('propPrice').textContent=p.priceLabel;
+ document.getElementById('propPriceSub').textContent=p.priceSub;
+ document.getElementById('propDesc').textContent=p.desc;
+ document.getElementById('propMeta').innerHTML=`
+  <div class="bg-deep/60 border border-white/5 rounded-2xl p-3.5 text-center"><i data-lucide="ruler" class="w-5 h-5 text-gold mx-auto mb-1"></i><div class="font-black">${faNum(p.area)} متر</div><div class="text-[11px] text-muted">${p.land?'بنا · زمین '+faNum(p.land):'زیربنا'}</div></div>
+  <div class="bg-deep/60 border border-white/5 rounded-2xl p-3.5 text-center"><i data-lucide="bed-double" class="w-5 h-5 text-gold mx-auto mb-1"></i><div class="font-black">${p.rooms?faNum(p.rooms)+' خواب':'—'}</div><div class="text-[11px] text-muted">خواب</div></div>
+  <div class="bg-deep/60 border border-white/5 rounded-2xl p-3.5 text-center"><i data-lucide="car" class="w-5 h-5 text-gold mx-auto mb-1"></i><div class="font-black">${p.parking?faNum(p.parking)+' پارکینگ':'—'}</div><div class="text-[11px] text-muted">${p.floor}</div></div>
+  <div class="bg-deep/60 border border-white/5 rounded-2xl p-3.5 text-center"><i data-lucide="history" class="w-5 h-5 text-gold mx-auto mb-1"></i><div class="font-black">${p.age===0?'نوساز':faNum(p.age)+' ساله'}</div><div class="text-[11px] text-muted">سن بنا</div></div>`;
+ document.getElementById('propAmen').innerHTML=p.amen.map(a=>`<span class="chip text-xs"><i data-lucide="check" class="w-3.5 h-3.5 text-gold"></i>${a}</span>`).join('');
+ document.getElementById('propSpecs').innerHTML=[
+  ['کد ملک',p.code],['نوع سند','تک‌برگ · آماده انتقال'],['وضعیت','تخلیه و آماده بازدید'],
+  ['سرویس بهداشتی',p.baths?faNum(p.baths)+' حمام + سرویس ایرانی و فرنگی':'—'],
+  ['پارکینگ',p.parking?faNum(p.parking)+' واحد · '+ (p.parking>1?'باکس‌دار':'مسقف'):'ندارد'],
+  ['آسانسور','دارد · نفربر + باربر'],['انباری','دارد · '+faNum(8)+' متری'],['سند و پایان‌کار','استعلام و تأیید شده']
+ ].map(([k,v])=>`<div class="flex items-center justify-between bg-deep/60 border border-white/5 rounded-xl px-4 py-3"><span class="text-muted text-xs">${k}</span><span class="font-bold text-[13px]">${v}</span></div>`).join('');
+ const ag=AGENTS[p.agent];
+ document.getElementById('propAgent').innerHTML=`<div class="flex items-center gap-3"><img src="${ag.img}" alt="${ag.name}" class="w-16 h-16 rounded-2xl object-cover border border-gold/30"><div><div class="font-bold text-sm">${ag.name}</div><div class="text-xs text-gold mt-0.5">${ag.role}</div><div class="text-[11px] text-muted">${ag.exp} · <span dir="ltr">${ag.phone}</span></div></div></div>`;
+ syncDetailFav();
+ const sim=PROPERTIES.filter(x=>x.id!==p.id&&(x.type===p.type||x.city===p.city||x.hood===p.hood)).slice(0,3);
+ document.getElementById('propSimilar').innerHTML=(sim.length?sim:PROPERTIES.slice(0,3)).map(propCard).join('');
+ navigate('property'); refreshIcons();
+ document.getElementById('propGalleryMain').onclick=()=>openLightbox(p.images[0]);
+}
+function setMainImg(src,el){
+ document.getElementById('propGalleryMain').src=src;
+ document.querySelectorAll('.gallery-thumb').forEach(t=>t.classList.remove('active'));
+ if(el) el.classList.add('active');
+ document.getElementById('propGalleryMain').onclick=()=>openLightbox(src);
+}
+function syncDetailFav(){
+ const b=document.getElementById('favBtnDetail');
+ b.classList.toggle('fav-active',currentProp&&favs.has(currentProp.id));
+ b.onclick=()=>toggleFav(currentProp.id,b);
+ document.getElementById('shareBtn').onclick=()=>{
+  const txt=`${currentProp.title} | ${currentProp.priceLabel} | کد ${currentProp.code} — املاک هخامنش`;
+  if(navigator.clipboard) navigator.clipboard.writeText(txt).then(()=>toast('لینک ملک کپی شد و آماده ارسال است.'));
+  else toast('لینک ملک آماده اشتراک است.');
+ };
+}
+
+/* ============ FAVORITES PAGE ============ */
+function renderFavs(){
+ const list=PROPERTIES.filter(p=>favs.has(p.id));
+ document.getElementById('favGrid').innerHTML=list.map(propCard).join('');
+ document.getElementById('favEmpty').classList.toggle('hidden',list.length>0);
+ refreshIcons();
+}
+
+/* ============ BLOG ============ */
+function renderBlogCats(){
+ const cats=['همه',...new Set(BLOGS.map(b=>b.cat))];
+ document.getElementById('blogCats').innerHTML=cats.map(c=>`<button onclick="setBlogCat('${c}')" class="px-4 py-2.5 rounded-xl text-xs border transition ${currentBlogCat===c?'tab-active border-transparent':'border-white/10 text-muted hover:border-gold'}">${c}</button>`).join('');
+}
+function setBlogCat(c){currentBlogCat=c;renderBlogCats();renderBlog();}
+function blogCard(b){
+ return `<article class="card-luxe rounded-[24px] overflow-hidden group cursor-pointer" onclick="openBlog(${b.id})">
+  <div class="img-zoom h-52 relative"><img src="${b.img}" alt="${b.title}" loading="lazy" class="w-full h-full object-cover">
+  <span class="absolute top-3 right-3 text-[11px] font-bold px-3 py-1.5 rounded-full badge-gold">${b.cat}</span></div>
+  <div class="p-5"><div class="flex items-center gap-3 text-[11px] text-muted"><span class="flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i>${b.date}</span><span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5"></i>${b.read}</span><span class="flex items-center gap-1"><i data-lucide="eye" class="w-3.5 h-3.5"></i>${b.views}</span></div>
+  <h3 class="font-black mt-2 leading-7 group-hover:text-champagne transition">${b.title}</h3>
+  <p class="text-xs text-muted leading-6 mt-2 line-clamp-2">${b.excerpt}</p>
+  <span class="inline-flex items-center gap-1.5 text-gold text-xs font-bold mt-3">ادامه مطلب <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i></span></div></article>`;
+}
+function renderBlog(){
+ let l=BLOGS.filter(b=>(currentBlogCat==='همه'||b.cat===currentBlogCat)&&(!blogQ||(b.title+b.excerpt).includes(blogQ)));
+ document.getElementById('blogGrid').innerHTML=l.length?l.map(blogCard).join(''):'<div class="col-span-full text-center text-muted py-14">مقاله‌ای یافت نشد.</div>';
+ refreshIcons();
+}
+function renderBlogPreview(){
+ document.getElementById('blogPreviewGrid').innerHTML=BLOGS.slice(0,3).map(blogCard).join('');
+ refreshIcons();
+}
+function openBlog(id){
+ const b=BLOGS.find(x=>x.id===id); if(!b) return;
+ document.getElementById('blogDetailContent').innerHTML=`
+  <span class="chip text-xs">${b.cat}</span>
+  <h1 class="text-2xl sm:text-4xl font-black leading-snug mt-4">${b.title}</h1>
+  <div class="flex flex-wrap items-center gap-4 text-xs text-muted mt-3 pb-5 border-b border-white/5">
+   <span class="flex items-center gap-1.5"><i data-lucide="calendar" class="w-4 h-4 text-gold"></i>${b.date}</span>
+   <span class="flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4 text-gold"></i>زمان مطالعه ${b.read}</span>
+   <span class="flex items-center gap-1.5"><i data-lucide="eye" class="w-4 h-4 text-gold"></i>${b.views} بازدید</span>
+   <button onclick="toast('لینک مقاله کپی شد.')" class="mr-auto ghost-btn px-3 py-2 rounded-xl flex items-center gap-1"><i data-lucide="share-2" class="w-3.5 h-3.5"></i> اشتراک</button>
+  </div>
+  <img src="${b.img}" alt="${b.title}" class="w-full h-[300px] sm:h-[420px] object-cover rounded-[26px] border border-line my-6">
+  <p class="text-champagne font-bold leading-9 text-[17px] border-r-4 border-gold pr-4">${b.excerpt}</p>
+  <div class="space-y-4 mt-5 text-[15px] leading-9 text-[#D6DCE6]">${b.body.map(p=>`<p>${p}</p>`).join('')}</div>
+  <div class="rounded-3xl border border-gold/30 bg-gradient-to-bl from-gold/10 to-transparent p-6 mt-8 flex flex-wrap items-center justify-between gap-4">
+   <div><div class="font-black">این موضوع برای ملک شما هم صدق می‌کند؟</div><div class="text-xs text-muted mt-1">تحلیل رایگان وضعیت ملک‌تان را از کارشناس ارشد بگیرید.</div></div>
+   <button onclick="openConsult()" class="gold-btn px-6 py-3.5 rounded-xl text-sm">مشاوره رایگان</button>
+  </div>`;
+ document.getElementById('blogRelated').innerHTML=BLOGS.filter(x=>x.id!==id).slice(0,2).map(blogCard).join('');
+ navigate('blogdetail'); refreshIcons();
+}
+
+/* ============ TESTIMONIALS ============ */
+function renderTesti(){
+ const t=TESTIS[testiIdx];
+ document.getElementById('testiBox').innerHTML=`
+  <div class="flex gap-1 text-gold mb-4">${'<i data-lucide="star" class="w-4 h-4 fill-current"></i>'.repeat(5)}</div>
+  <p class="text-base sm:text-lg leading-9">«${t.text}»</p>
+  <div class="flex items-center gap-3 mt-5"><img src="${t.img}" alt="${t.name}" class="w-13 h-13 w-14 h-14 rounded-2xl object-cover border border-gold/40"><div><div class="font-bold text-sm">${t.name}</div><div class="text-xs text-gold">${t.role}</div></div></div>`;
+ document.getElementById('testiDots').innerHTML=TESTIS.map((_,i)=>`<button onclick="goTesti(${i})" aria-label="نظر ${faNum(i+1)}" class="h-2 rounded-full transition-all ${i===testiIdx?'w-8 bg-gold':'w-2 bg-white/15'}"></button>`).join('');
+ refreshIcons();
+}
+function stepTesti(d){testiIdx=(testiIdx+d+TESTIS.length)%TESTIS.length;renderTesti();}
+function goTesti(i){testiIdx=i;renderTesti();}
+setInterval(()=>{if(document.getElementById('page-home').classList.contains('active')){testiIdx=(testiIdx+1)%TESTIS.length;renderTesti();}},7000);
+
+/* ============ CALCULATOR ============ */
+function calc(){
+ const loan=+document.getElementById('calcLoan').value*1e7;
+ const annual=+document.getElementById('calcRate').value;
+ const years=+document.getElementById('calcYears').value;
+ document.getElementById('loanVal').textContent=faNum((+document.getElementById('calcLoan').value/100).toFixed(1).replace('.0',''))+' میلیارد تومان';
+ document.getElementById('rateVal').textContent=faNum(annual)+'٪';
+ document.getElementById('yearVal').textContent=faNum(years)+' سال';
+ const r=annual/100/12, n=years*12;
+ const m=r>0?loan*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1):loan/n;
+ document.getElementById('calcResult').textContent=faNum(Math.round(m))+' تومان';
+}
+['calcLoan','calcRate','calcYears'].forEach(id=>document.getElementById(id).addEventListener('input',calc));
+
+/* ============ MODALS / LIGHTBOX ============ */
+function openConsult(type){
+ if(type){const s=document.getElementById('qType'); if(s) s.value=type;}
+ const m=document.getElementById('consultModal');
+ m.classList.remove('hidden');m.classList.add('flex');
+ document.getElementById('consultBody').classList.remove('hidden');
+ document.getElementById('consultSuccess').classList.add('hidden');
+ document.body.style.overflow='hidden';refreshIcons();
+}
+function closeConsult(){
+ const m=document.getElementById('consultModal');
+ m.classList.add('hidden');m.classList.remove('flex');document.body.style.overflow='';
+}
+function submitConsult(){
+ const n=document.getElementById('qName').value.trim();
+ const p=document.getElementById('qPhone').value.trim();
+ if(n.length<3){toast('لطفاً نام کامل را وارد کنید.','err');return;}
+ if(!/^09\d{9}$/.test(p.replace(/[\s-]/g,''))){toast('شماره موبایل معتبر وارد کنید (09...)','err');return;}
+ document.getElementById('consultCode').textContent='HX-'+Math.floor(1000+Math.random()*9000);
+ document.getElementById('consultBody').classList.add('hidden');
+ document.getElementById('consultSuccess').classList.remove('hidden');
+ refreshIcons();toast('مشاوره شما با موفقیت رزرو شد.');
+}
+function openLightbox(src){
+ document.getElementById('lightboxImg').src=src;
+ const l=document.getElementById('lightbox');l.classList.remove('hidden');l.classList.add('flex');
+ document.body.style.overflow='hidden';
+}
+function closeLightbox(){
+ const l=document.getElementById('lightbox');l.classList.add('hidden');l.classList.remove('flex');
+ document.body.style.overflow='';
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeConsult();closeLightbox();toggleMobile(false);}});
+
+/* ============ FORMS ============ */
+document.getElementById('contactForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const n=document.getElementById('cName').value.trim();
+ const p=document.getElementById('cPhone').value.trim();
+ if(n.length<3){toast('نام کامل را وارد کنید.','err');return;}
+ if(!/^09\d{9}$/.test(p.replace(/[\s-]/g,''))){toast('موبایل معتبر وارد کنید.','err');return;}
+ if(!document.getElementById('cAgree').checked){toast('موافقت با قوانین الزامی است.','err');return;}
+ document.getElementById('trackCode').textContent='HX-'+Math.floor(10000+Math.random()*89999);
+ document.getElementById('contactFields').classList.add('hidden');
+ document.getElementById('contactSuccess').classList.remove('hidden');
+ refreshIcons();toast('پیام شما ثبت شد؛ به‌زودی تماس می‌گیریم.');
+});
+function resetContact(){
+ document.getElementById('contactFields').classList.remove('hidden');
+ document.getElementById('contactSuccess').classList.add('hidden');
+ document.getElementById('contactForm').reset();
+}
+document.getElementById('visitForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const n=document.getElementById('visitName').value.trim();
+ const p=document.getElementById('visitPhone').value.trim();
+ if(n.length<3){toast('نام را وارد کنید.','err');return;}
+ if(!/^09\d{9}$/.test(p.replace(/[\s-]/g,''))){toast('موبایل معتبر وارد کنید.','err');return;}
+ e.target.reset();
+ toast(`بازدید شما ثبت شد ${n} عزیز؛ مشاور ملک ${currentProp?currentProp.code:''} هماهنگ می‌کند.`);
+});
+document.querySelectorAll('.newsletter-form').forEach(f=>f.addEventListener('submit',e=>{
+ e.preventDefault();
+ const inp=f.querySelector('input[type=email]');
+ if(!/^\S+@\S+\.\S+$/.test(inp.value)){toast('ایمیل معتبر وارد کنید.','err');return;}
+ inp.value='';toast('عضویت شما در باشگاه طلایی ثبت شد. اولین تحلیل جمعه می‌رسد.');
+}));
+
+/* ============ EVENTS ============ */
+document.querySelectorAll('.hero-tab').forEach(b=>b.addEventListener('click',()=>{
+ heroDeal=b.dataset.htab;
+ document.querySelectorAll('.hero-tab').forEach(x=>{const on=x===b;x.classList.toggle('tab-active',on);x.classList.toggle('text-muted',!on);});
+}));
+document.getElementById('heroSearchBtn').addEventListener('click',()=>{
+ const city=document.getElementById('heroCity').value;
+ const type=document.getElementById('heroType').value;
+ const price=document.getElementById('heroPrice').value;
+ const area=+document.getElementById('heroArea').value;
+ filters.deal=heroDeal==='all'?'all':heroDeal;
+ setDeal(filters.deal);
+ filters.city=city;document.getElementById('filterCity').value=city;
+ filters.type=type;document.getElementById('filterType').value=type;
+ filters.minArea=area;document.getElementById('filterArea').value=area;
+ document.getElementById('areaVal').textContent=area?('بالای '+faNum(area)+' متر'):'۰ متر';
+ if(price!=='all'){
+  // quick client-side prefilter note
+ }
+ visibleCount=9;navigate('listings');renderListings();
+ const msg=price==='all'?'در حال نمایش نتایج جست‌وجوی شما...':price==='61'?'فایل‌های بالای ۶۰ میلیارد نمایش داده شد.':'فایل‌های تا '+faNum(price)+' میلیارد نمایش داده شد.';
+ toast(msg);
+ if(price!=='all'){
+  // apply extra price filter visually
+  let list=filteredProps();
+  if(price==='61') list=list.filter(p=>p.deal==='rent'?true:p.priceSort>60);
+  else list=list.filter(p=>p.deal==='rent'?true:p.priceSort<=+price);
+  document.getElementById('listGrid').innerHTML=list.slice(0,visibleCount).map(propCard).join('')||'<div class="col-span-full text-center text-muted py-10">در این بودجه فایلی نیست؛ مشاور ما فایل آف‌مارکت دارد. <button onclick="openConsult()" class="text-gold underline">رزرو مشاوره</button></div>';
+  document.getElementById('resultCount').innerHTML=`<span class="text-white font-bold">${faNum(list.length)}</span> ملک در بودجه شما`;
+  refreshIcons();
+ }
+});
+document.querySelectorAll('.feat-tab').forEach(b=>b.addEventListener('click',()=>{
+ featTab=b.dataset.ftab;
+ document.querySelectorAll('.feat-tab').forEach(x=>{const on=x===b;x.classList.toggle('tab-active',on);x.classList.toggle('text-muted',!on);});
+ renderFeatured();
+}));
+document.querySelectorAll('#dealSeg .seg').forEach(b=>b.addEventListener('click',()=>{setDeal(b.dataset.deal);visibleCount=9;renderListings();}));
+document.querySelectorAll('#roomSeg .rseg').forEach(b=>b.addEventListener('click',()=>{
+ filters.rooms=b.dataset.room;
+ document.querySelectorAll('#roomSeg .rseg').forEach(x=>{const on=x===b;x.classList.toggle('tab-active',on);x.classList.toggle('text-muted',!on);});
+ visibleCount=9;renderListings();
+}));
+document.getElementById('filterType').addEventListener('change',e=>{filters.type=e.target.value;visibleCount=9;renderListings();});
+document.getElementById('filterCity').addEventListener('change',e=>{filters.city=e.target.value;visibleCount=9;renderListings();});
+document.getElementById('sortSelect').addEventListener('change',e=>{filters.sort=e.target.value;renderListings();});
+document.getElementById('filterArea').addEventListener('input',e=>{filters.minArea=+e.target.value;document.getElementById('areaVal').textContent=+e.target.value?('بالای '+faNum(e.target.value)+' متر'):'۰ متر';visibleCount=9;renderListings();});
+document.getElementById('onlyFeatured').addEventListener('change',e=>{filters.onlyFeatured=e.target.checked;visibleCount=9;renderListings();});
+document.getElementById('searchInput').addEventListener('input',e=>{filters.q=e.target.value;visibleCount=9;renderListings();});
+document.getElementById('resetFilters').addEventListener('click',resetAllFilters);
+document.getElementById('loadMoreBtn').addEventListener('click',()=>{visibleCount+=6;renderListings();});
+document.getElementById('blogSearch').addEventListener('input',e=>{blogQ=e.target.value;renderBlog();});
+
+/* ============ FAQ ============ */
+function renderFaq(){
+ document.getElementById('faqWrap').innerHTML=FAQS.map((f,i)=>`
+  <div class="faq-item bg-deep/60 border border-white/5 rounded-2xl overflow-hidden ${i===0?'open':''}">
+   <button onclick="this.parentElement.classList.toggle('open')" class="w-full flex items-center justify-between gap-3 p-4 text-sm font-bold text-right">${f.q}<i data-lucide="chevron-down" class="faq-chevron w-4 h-4 text-gold shrink-0"></i></button>
+   <div class="faq-body"><p class="px-4 pb-4 text-xs text-muted leading-7">${f.a}</p></div>
+  </div>`).join('');
+ refreshIcons();
+}
+
+/* ============ MARQUEE / COUNTERS / REVEAL ============ */
+function renderMarquee(){
+ const items=['الهیه','فرشته','زعفرانیه','فرمانیه','نیاوران','سعادت‌آباد','شهرک غرب','جردن','ونک','لواسان','کردان','قلهک'];
+ const chunk=items.map(n=>`<span class="flex items-center gap-2 whitespace-nowrap"><span class="w-1.5 h-1.5 rotate-45 bg-gold inline-block"></span>${n}</span>`).join('');
+ document.getElementById('marquee').innerHTML=chunk+chunk;
+}
+let revealObs;
+function observeReveals(){
+ const els=document.querySelectorAll('.reveal:not(.in)');
+ if(!revealObs){
+  revealObs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');revealObs.unobserve(e.target);}}),{threshold:.12});
+ }
+ els.forEach(el=>revealObs.observe(el));
+}
+const cntObs=new IntersectionObserver(es=>es.forEach(e=>{
+ if(!e.isIntersecting) return;
+ const el=e.target,end=+el.dataset.count;let cur=0;const step=Math.max(1,Math.ceil(end/60));
+ const t=setInterval(()=>{cur+=step;if(cur>=end){cur=end;clearInterval(t);}el.textContent=faNum(cur);},28);
+ cntObs.unobserve(el);
+}),{threshold:.5});
+document.querySelectorAll('[data-count]').forEach(el=>cntObs.observe(el));
+
+/* scroll effects */
+window.addEventListener('scroll',()=>{
+ const h=document.documentElement;
+ const p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;
+ document.getElementById('scrollProg').style.width=p+'%';
+ const tt=document.getElementById('toTop');
+ const show=h.scrollTop>600;
+ tt.style.display=show?'block':'none';
+ document.getElementById('header').style.boxShadow=h.scrollTop>10?'0 10px 40px -12px rgba(0,0,0,.6)':'none';
+},{passive:true});
+
+/* ============ INIT ============ */
+function init(){
+ let w=0;const li=setInterval(()=>{w+=18;document.getElementById('loadBar').style.width=Math.min(w,100)+'%';if(w>=100)clearInterval(li);},120);
+ renderMarquee();renderFeatured();renderCats();renderTeam();renderAmenFilters();renderListings();renderBlogCats();renderBlog();renderBlogPreview();renderTesti();renderFaq();calc();updateFavCount();
+ document.getElementById('year').textContent='۱۴۰۵';
+ refreshIcons();observeReveals();
+ window.addEventListener('load',()=>{setTimeout(()=>document.getElementById('preloader').classList.add('hide'),500);});
+ setTimeout(()=>document.getElementById('preloader').classList.add('hide'),2600);
+}
+document.addEventListener('DOMContentLoaded',init);
+</script>
+</body>
+</html>

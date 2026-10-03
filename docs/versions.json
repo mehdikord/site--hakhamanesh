@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-10-03",
+  "runtimeTested": "Node.js 24.21.0 (Linux)",
+  "dependencies": {
+    "lucide-react": "1.51.0",
+    "next": "16.3.8",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "server-only": "0.0.1",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@fontsource-variable/vazirmatn": "5.3.0",
+    "@playwright/test": "1.63.0",
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "24.19.1",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.3.8",
+    "prettier": "3.9.9",
+    "tailwindcss": "4.3.3",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3"
+  },
+  "toolingNote": "TypeScript and ESLint use the newest versions compatible with the peer dependencies of eslint-config-next."
+}

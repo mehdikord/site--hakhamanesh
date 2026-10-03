@@ -1,0 +1,37 @@
+[Unit]
+Description=Hakhamanesh Estate - Next.js production server
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=hakhamanesh
+Group=hakhamanesh
+WorkingDirectory=/opt/hakhamanesh
+Environment=NODE_ENV=production
+Environment=PORT=3000
+Environment=HOME=/var/lib/hakhamanesh
+Environment=PATH=/usr/local/bin:/usr/bin:/bin
+EnvironmentFile=/opt/hakhamanesh/.env.local
+ExecStartPre=/usr/bin/test -s /opt/hakhamanesh/.next/BUILD_ID
+# Verify this path with: command -v npm
+ExecStart=/usr/bin/npm start
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+KillSignal=SIGTERM
+KillMode=control-group
+UMask=0077
+StateDirectory=hakhamanesh
+StateDirectoryMode=0700
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/hakhamanesh/.next /var/lib/hakhamanesh
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=hakhamanesh
+
+[Install]
+WantedBy=multi-user.target

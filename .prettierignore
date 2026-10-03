@@ -1,0 +1,9 @@
+node_modules
+.next
+reference
+public
+test-results
+runtime
+package-lock.json
+next-env.d.ts
+docs/screenshots

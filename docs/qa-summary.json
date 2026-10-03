@@ -1,0 +1,216 @@
+{
+  "date": "2026-10-03",
+  "production": {
+    "node": "24.21.0",
+    "next": "16.3.8",
+    "build": "passed",
+    "npmStart": "passed",
+    "staticExport": false
+  },
+  "lint": "passed",
+  "typecheck": "passed",
+  "unitTests": {
+    "passed": 9,
+    "failed": 0
+  },
+  "browserTests": {
+    "latestPassed": 34,
+    "latestFailed": 0,
+    "note": "Latest outcome per scenario; full run plus targeted rerun after adding hydration wait and limiting browser workers on the single-core VM. No application source changed between these two runs.",
+    "fullRunStats": {
+      "startTime": "2026-10-03T12:32:38.626Z",
+      "duration": 317396.249,
+      "expected": 30,
+      "skipped": 2,
+      "unexpected": 2,
+      "flaky": 0
+    },
+    "targetedRerunStats": {
+      "startTime": "2026-10-03T12:38:47.058Z",
+      "duration": 102680.579,
+      "expected": 4,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "scenarios": [
+      {
+        "title": "API rejects bad requests and cross-origin submissions",
+        "project": "chromium",
+        "result": "passed"
+      },
+      {
+        "title": "contact form stores a real request with Persian mobile digits",
+        "project": "chromium",
+        "result": "passed"
+      },
+      {
+        "title": "consultation validates server-side then stores its property reference",
+        "project": "chromium",
+        "result": "passed"
+      },
+      {
+        "title": "visit and newsletter forms submit to the server",
+        "project": "chromium",
+        "result": "passed"
+      },
+      {
+        "title": "server error does not display fake success or discard entered data",
+        "project": "chromium",
+        "result": "passed"
+      },
+      {
+        "title": "responsive routes at 320px",
+        "project": "chromium",
+        "result": "passed"
+      },
+      {
+        "title": "responsive routes at 360px",
+        "project": "chromium",
+        "result": "passed"
+      },
+      {
+        "title": "responsive routes at 390px",
+        "project": "chromium",
+        "result": "passed"
+      },
+      {
+        "title": "responsive routes at 480px",
+        "project": "chromium",
+        "result": "passed"
+      },
+      {
+        "title": "responsive routes at 640px",
+        "project": "chromium",
+        "result": "passed"
+      },
+      {
+        "title": "responsive routes at 768px",
+        "project": "chromium",
+        "result": "passed"
+      },
+      {
+        "title": "responsive routes at 1024px",
+        "project": "chromium",
+        "result": "passed"
+      },
+      {
+        "title": "responsive routes at 1280px",
+        "project": "chromium",
+        "result": "passed"
+      },
+      {
+        "title": "responsive routes at 1440px",
+        "project": "chromium",
+        "result": "passed"
+      },
+      {
+        "title": "responsive routes at 1920px",
+        "project": "chromium",
+        "result": "passed"
+      },
+      {
+        "title": "all 20 details are independent, refreshable pages with real metadata",
+        "project": "chromium",
+        "result": "passed"
+      },
+      {
+        "title": "home search, persistent price filter, sort, direct refresh and back",
+        "project": "chromium",
+        "result": "passed"
+      },
+      {
+        "title": "Persian code search, no-results, amenities, rooms and featured filters",
+        "project": "chromium",
+        "result": "passed"
+      },
+      {
+        "title": "favorites persist, synchronize across pages and are removable",
+        "project": "chromium",
+        "result": "passed"
+      },
+      {
+        "title": "invalid local storage does not crash the app",
+        "project": "chromium",
+        "result": "passed"
+      },
+      {
+        "title": "gallery changes main image; dialog traps focus, closes on Escape and restores focus",
+        "project": "chromium",
+        "result": "passed"
+      },
+      {
+        "title": "mobile drawer navigation and consultation keyboard behavior",
+        "project": "chromium",
+        "result": "passed"
+      },
+      {
+        "title": "blog category, search and detail navigation preserve query state",
+        "project": "chromium",
+        "result": "passed"
+      },
+      {
+        "title": "calculator updates and FAQ toggles",
+        "project": "chromium",
+        "result": "passed"
+      },
+      {
+        "title": "unknown property / article use the branded not-found page",
+        "project": "chromium",
+        "result": "passed"
+      },
+      {
+        "title": "content is server-rendered with JavaScript disabled",
+        "project": "chromium",
+        "result": "passed"
+      },
+      {
+        "title": "detail return links retain the last filtered result set",
+        "project": "chromium",
+        "result": "passed"
+      },
+      {
+        "title": "share copies a real, independently loadable detail URL",
+        "project": "chromium",
+        "result": "passed"
+      },
+      {
+        "title": "cross-browser layout and interactions at 390px",
+        "project": "firefox",
+        "result": "passed"
+      },
+      {
+        "title": "cross-browser layout and interactions at 768px",
+        "project": "firefox",
+        "result": "passed"
+      },
+      {
+        "title": "cross-browser layout and interactions at 1440px",
+        "project": "firefox",
+        "result": "passed"
+      },
+      {
+        "title": "cross-browser layout and interactions at 390px",
+        "project": "webkit",
+        "result": "passed"
+      },
+      {
+        "title": "cross-browser layout and interactions at 768px",
+        "project": "webkit",
+        "result": "passed"
+      },
+      {
+        "title": "cross-browser layout and interactions at 1440px",
+        "project": "webkit",
+        "result": "passed"
+      }
+    ]
+  },
+  "viewports": {
+    "chromium": [320, 360, 390, 480, 640, 768, 1024, 1280, 1440, 1920],
+    "firefox": [390, 768, 1440],
+    "webkit": [390, 768, 1440]
+  },
+  "localImageFilesVerified": 52,
+  "productionAuditVulnerabilities": 0
+}
